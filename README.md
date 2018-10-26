@@ -6,7 +6,7 @@ Files that go to directory on your local machine (desktop, laptop, etc.):
 runmpact.sh
 
 
-Files that go to directory on your local machine (desktop, laptop, etc.):
+Files that go to directory on server:
 core_run.sh, 
 run_checker.py
 
