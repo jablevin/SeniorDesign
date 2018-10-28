@@ -1,9 +1,19 @@
-runmpact 2a 1 | tee logfile
+core=$'smr_7x7'
+processors=37
+runmpact $core $processors | tee logfile
 line=$(head -n 1 logfile)
-filename=${line:48:72}'/2a.out'
+file=${line:48:72}'/'$core'.out'
+location=${line:48:72}'/'
 
-echo $filename
+echo $location
 
 python run_checker.py <<EOF
-$filename
+$file
 EOF
+
+#Change location to your needs
+copy_location=$'/share/casl/jablevin/core_runs/core1/'
+
+cp $location$core'.out' copy_location
+cp $location$core'.log' copy_location
+cp $location$core'.h5' copy_location

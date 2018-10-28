@@ -1,6 +1,5 @@
 from time import sleep
 
-
 filename = raw_input()
 
 print filename
@@ -26,7 +25,7 @@ while not check:
     except:
         pass
 
-    if iteration >= 30:
+    if iteration >= 360:
         break
 
     sleep(wait_time)
