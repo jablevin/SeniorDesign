@@ -14,6 +14,6 @@ EOF
 #Change location to your needs
 copy_location=$'/share/casl/jablevin/core_runs/core1/'
 
-cp $location$core'.out' copy_location
-cp $location$core'.log' copy_location
-cp $location$core'.h5' copy_location
+cp $location$core'.out' $copy_location
+cp $location$core'.log' $copy_location
+cp $location$core'.h5' $copy_location
