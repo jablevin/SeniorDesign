@@ -1,0 +1,1875 @@
+MPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACT
+
+
+     MMMMMMM         MMMMMMM  PPPPPPPPPPPPPPP          AAA              CCCCCCCCC     TTTTTTTTTTTTTTTTTT
+     MMMMMMMM       MMMMMMMM  PPPPPPPPPPPPPPPP        AAAAA           CCCCCCCCCCCCC   TTTTTTTTTTTTTTTTTT
+      MMMM MMM     MMM MMMM    PPPP        PPPP      AAAAAAA         CCCC       CCCC  TTT    TTTT    TTT
+      MMMM  MMM   MMM  MMMM    PPPP         PPPP     AAA AAA        CCCC         CCCC        TTTT       
+      MMMM   MMM MMM   MMMM    PPPP         PPPP    AAAA AAAA      CCCC                      TTTT       
+      MMMM    MMMMM    MMMM    PPPP        PPPP    AAAA   AAAA     CCCC                      TTTT       
+      MMMM     MMM     MMMM    PPPPPPPPPPPPPPP    AAAA     AAAA    CCCC                      TTTT       
+      MMMM             MMMM    PPPPPPPPPPPPPP     AAAA     AAAA    CCCC                      TTTT       
+      MMMM             MMMM    PPPP              AAAAAAAAAAAAAAA   CCCC          CCCC        TTTT       
+      MMMM             MMMM    PPPP              AAAAAAAAAAAAAAA   CCCC          CCCC        TTTT       
+      MMMM             MMMM    PPPP             AAAA         AAAA   CCCC         CCCC        TTTT       
+      MMMM             MMMM    PPPP             AAAA         AAAA    CCCC       CCCC         TTTT       
+     MMMMMM           MMMMMM  PPPPPP           AAAAA         AAAAA    CCCCCCCCCCCCC        TTTTTTTT     
+     MMMMMM           MMMMMM  PPPPPP           AAAAA         AAAAA      CCCCCCCCC          TTTTTTTT     
+
+
+MPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACTMPACT
+
+
+================================================================================
+                                MPACT v2.1.0      (  rev:        SHA1: era3.8-RC3-start)
+                                                  (built: 14:59:40 Jul 10 2018)
+           Executing case: 2a
+           by veraadm on n2f1-6 at 16:21:53, Oct. 26, 2018...
+
+================================================================================
+
+    TYPE(ParamType_List) :: CASEID=
+        TYPE(StringType) :: case_id=CASL AMA Benchmark Problem 2A - Fuel Lattice - Public
+        TYPE(ParamType_List) :: STATES=
+            TYPE(ParamType_List) :: STATE_1=
+                REAL(SDK) :: boron=  1300.000000000000    
+                1-D ARRAY REAL(SDK) :: deplete= 0.0000000000000    
+                                                10.000000000000    
+                                                20.000000000000    
+                                                40.000000000000    
+                                                60.000000000000    
+                TYPE(StringType) :: deplete_units=EFPD
+                REAL(SDK) :: power=  100.0000000000000    
+                TYPE(StringType) :: sym=qtr
+                REAL(SDK) :: kmul_beta=  1.000000000000000    
+                TYPE(StringType) :: feedback=OFF
+                REAL(SDK) :: modden= 0.7430000000000000    
+                REAL(SDK) :: coolden= 0.7430000000000000    
+                REAL(SDK) :: tfuel=  900.0000000000000    
+                REAL(SDK) :: thexp_tfuel=  293.0000000000000     !(XML Default)
+                REAL(SDK) :: tinlet=  291.8500000000000    
+                REAL(SDK) :: thexp_tmod=  293.0000000000000     !(XML Default)
+                REAL(SDK) :: thexp_tclad=  293.0000000000000     !(XML Default)
+                REAL(SDK) :: bypass=  0.000000000000000     !(XML Default)
+            INTEGER(SNK) :: nState=            1
+        TYPE(ParamType_List) :: CORE=
+            REAL(SDK) :: apitch=  21.50000000000000    
+            1-D ARRAY TYPE(StringType) :: assm_map=ASSY
+            TYPE(StringType) :: bc_bot=reflecting
+            TYPE(StringType) :: bc_rad=reflecting
+            TYPE(StringType) :: bc_sym=rot
+            TYPE(StringType) :: bc_top=reflecting
+            TYPE(StringType) :: core_name=Core
+            INTEGER(SNK) :: core_size=            1
+            1-D ARRAY TYPE(StringType) :: crd_bank=-
+            1-D ARRAY TYPE(StringType) :: crd_map=-
+            TYPE(StringType) :: cycle_num=1
+            1-D ARRAY TYPE(StringType) :: det_map=-
+            1-D ARRAY TYPE(StringType) :: insert_map=-
+            INTEGER(SNK) :: NLowRefl=            0
+            REAL(SDK) :: rated_flow=  1.259978000000000    
+            REAL(SDK) :: rated_power= 0.4832000000000000E-01
+            TYPE(StringType) :: reactor_type=PWR
+            1-D ARRAY INTEGER(SNK) :: rotate_map=            0
+            1-D ARRAY INTEGER(SNK) :: insert_rotate_map=            0
+            1-D ARRAY INTEGER(SNK) :: shape=            1
+            TYPE(StringType) :: unit=1
+            INTEGER(SNK) :: NUpRefl=            0
+            TYPE(StringType) :: label_format=x-y                                                                                                                                                                                                     
+            1-D ARRAY TYPE(StringType) :: xlabel=A
+            1-D ARRAY TYPE(StringType) :: ylabel=1
+            TYPE(ParamType_List) :: Materials=
+                TYPE(ParamType_List) :: Material_1=
+                    INTEGER(SNK) :: ID=            1
+                    REAL(SDK) :: density=  10.20000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=aic
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.41101000000000    
+                                                     0.38899000000000    
+                                                     0.63277200000000E-02
+                                                     0.14367200000000    
+                                                     0.50000000000000E-01
+                    1-D ARRAY TYPE(StringType) :: mat_names=ag-107
+                                                            ag-109
+                                                            in-113
+                                                            in-115
+                                                            cd-00
+                TYPE(ParamType_List) :: Material_2=
+                    INTEGER(SNK) :: ID=            2
+                    REAL(SDK) :: density= 0.1189000000000000E-02
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=air
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.76490000000000    
+                                                     0.23510000000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=n-14
+                                                            o-16
+                TYPE(ParamType_List) :: Material_3=
+                    INTEGER(SNK) :: ID=            3
+                    REAL(SDK) :: density=  3.960000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=al2o3
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.52932100000000    
+                                                     0.47067900000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=al-27
+                                                            o-16
+                TYPE(ParamType_List) :: Material_4=
+                    INTEGER(SNK) :: ID=            4
+                    REAL(SDK) :: density=  2.550000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=b2o3
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.57241200000000E-01
+                                                     0.25333000000000    
+                                                     0.68942900000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=b-10
+                                                            b-11
+                                                            o-16
+                TYPE(ParamType_List) :: Material_5=
+                    INTEGER(SNK) :: ID=            5
+                    REAL(SDK) :: density=  1.759700000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=b4c
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.14427200000000    
+                                                     0.63849500000000    
+                                                     0.21723400000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=b-10
+                                                            b-11
+                                                            c-00
+                TYPE(ParamType_List) :: Material_6=
+                    INTEGER(SNK) :: ID=            6
+                    REAL(SDK) :: density=  2.370000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=boron
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.18430900000000    
+                                                     0.81569100000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=b-10
+                                                            b-11
+                TYPE(ParamType_List) :: Material_7=
+                    INTEGER(SNK) :: ID=            7
+                    REAL(SDK) :: density=  6.560000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=clad
+                    1-D ARRAY REAL(SDK) :: mat_fracs= 1.0000000000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=zirc4
+                TYPE(ParamType_List) :: Material_8=
+                    INTEGER(SNK) :: ID=            8
+                    REAL(SDK) :: density=  7.850000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=cs
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.99921600000000E-02
+                                                     0.55891600000000E-01
+                                                     0.90983200000000    
+                                                     0.21387900000000E-01
+                                                     0.28962500000000E-02
+                    1-D ARRAY TYPE(StringType) :: mat_names=c-00
+                                                            fe-54
+                                                            fe-56
+                                                            fe-57
+                                                            fe-58
+                TYPE(ParamType_List) :: Material_9=
+                    INTEGER(SNK) :: ID=            9
+                    REAL(SDK) :: density=  7.407000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=gad
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.16764400000000E-02
+                                                     0.18513600000000E-01
+                                                     0.12650600000000    
+                                                     0.17610100000000    
+                                                     0.13550000000000    
+                                                     0.21643800000000    
+                                                     0.19288900000000    
+                                                     0.13237600000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=gd-152
+                                                            gd-154
+                                                            gd-155
+                                                            gd-156
+                                                            gd-157
+                                                            gd-158
+                                                            gd-160
+                                                            o-16
+                TYPE(ParamType_List) :: Material_10=
+                    INTEGER(SNK) :: ID=           10
+                    REAL(SDK) :: density= 0.1786000000000000E-03
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=gap
+                    1-D ARRAY REAL(SDK) :: mat_fracs= 1.0000000000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=he-4
+                TYPE(ParamType_List) :: Material_11=
+                    INTEGER(SNK) :: ID=           11
+                    REAL(SDK) :: density= 0.1786000000000000E-03
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=he
+                    1-D ARRAY REAL(SDK) :: mat_fracs= 1.0000000000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=he-4
+                TYPE(ParamType_List) :: Material_12=
+                    INTEGER(SNK) :: ID=           12
+                    REAL(SDK) :: density=  8.190000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=inc
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.25000100000000E-01, 0.25007500000000E-01, 0.62604700000000E-02, 0.12554700000000    , 0.14510300000000E-01, 0.36800400000000E-02, 0.39518300000000E-02, 0.64329900000000E-01, 0.15122400000000E-02, 0.20478000000000E-03, 0.49054100000000    , 0.19546300000000    , 0.86384900000000E-02, 0.27993800000000E-01, 0.73594500000000E-02
+                    1-D ARRAY TYPE(StringType) :: mat_names=si-00, ti-00, cr-50, cr-52, cr-53, cr-54, fe-54, fe-56, fe-57, fe-58, ni-58, ni-60, ni-61, ni-62, ni-64
+                TYPE(ParamType_List) :: Material_13=
+                    INTEGER(SNK) :: ID=           13
+                    REAL(SDK) :: density=  2.342490000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=pyrex
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.68194500000000E-02
+                                                     0.30180500000000E-01
+                                                     0.53500000000000    
+                                                     0.41000000000000E-01
+                                                     0.10000000000000E-01
+                                                     0.37700000000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=b-10
+                                                            b-11
+                                                            o-16
+                                                            na-23
+                                                            al-27
+                                                            si-00
+                TYPE(ParamType_List) :: Material_14=
+                    INTEGER(SNK) :: ID=           14
+                    REAL(SDK) :: density=  2.244190000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=pyrex-vera
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.71182300000000E-02
+                                                     0.31701500000000E-01
+                                                     0.55216700000000    
+                                                     0.40901400000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=b-10
+                                                            b-11
+                                                            o-16
+                                                            si-00
+                TYPE(ParamType_List) :: Material_15=
+                    INTEGER(SNK) :: ID=           15
+                    REAL(SDK) :: density=  2.180000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=sio2
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.53256500000000    
+                                                     0.46743500000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=o-16
+                                                            si-00
+                TYPE(ParamType_List) :: Material_16=
+                    INTEGER(SNK) :: ID=           16
+                    REAL(SDK) :: density=  8.000000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=ss
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.79936500000000E-03, 0.10000200000000E-01, 0.45000800000000E-03, 0.79300500000000E-02, 0.15902900000000    , 0.18380000000000E-01, 0.46614600000000E-02, 0.20000100000000E-01, 0.38601600000000E-01, 0.62837600000000    , 0.14771500000000E-01, 0.20003000000000E-02, 0.63838600000000E-01, 0.25437300000000E-01, 0.11242000000000E-02, 0.36430800000000E-02, 0.95775200000000E-03
+                    1-D ARRAY TYPE(StringType) :: mat_names=c-00, si-00, p-31, cr-50, cr-52, cr-53, cr-54, mn-55, fe-54, fe-56, fe-57, fe-58, ni-58, ni-60, ni-61, ni-62, ni-64
+                TYPE(ParamType_List) :: Material_17=
+                    INTEGER(SNK) :: ID=           17
+                    REAL(SDK) :: density=  19.30000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=tungsten
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.12000000000000E-02
+                                                     0.26500000000000    
+                                                     0.14310000000000    
+                                                     0.30640000000000    
+                                                     0.28430000000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=o-16
+                                                            w-182
+                                                            w-183
+                                                            w-184
+                                                            w-186
+                TYPE(ParamType_List) :: Material_18=
+                    INTEGER(SNK) :: ID=           18
+                    REAL(SDK) :: density=  3.650000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=waba
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.13621000000000E-01
+                                                     0.60281800000000E-01
+                                                     0.20525900000000E-01
+                                                     0.42629700000000    
+                                                     0.47927400000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=b-10
+                                                            b-11
+                                                            c-00
+                                                            o-16
+                                                            al-27
+                TYPE(ParamType_List) :: Material_19=
+                    INTEGER(SNK) :: ID=           19
+                    REAL(SDK) :: density= 0.7430000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=water
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.11191500000000    
+                                                     0.88808500000000    
+                    1-D ARRAY TYPE(StringType) :: mat_names=h-1
+                                                            o-16
+                TYPE(ParamType_List) :: Material_20=
+                    INTEGER(SNK) :: ID=           20
+                    REAL(SDK) :: density=  6.560000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=zirc2
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.41736900000000E-04, 0.83699400000000E-03, 0.96735900000000E-04, 0.24533600000000E-04, 0.76215000000000E-04, 0.12406700000000E-02, 0.29165000000000E-04, 0.39493500000000E-05, 0.36958700000000E-03, 0.14726800000000E-03, 0.65084800000000E-05, 0.21091500000000E-04, 0.55448300000000E-05, 0.49818800000000    , 0.10985200000000    , 0.16975700000000    , 0.17578000000000    , 0.28922700000000E-01, 0.13258700000000E-03, 0.91824500000000E-04, 0.47719100000000E-04, 0.20584200000000E-02, 0.10966500000000E-02, 0.34879800000000E-02, 0.12475800000000E-02, 0.47715400000000E-02, 0.68941000000000E-03, 0.87629200000000E-03, 0.15592600000000E-06, 0.51850400000000E-05, 0.18439300000000E-04, 0.27197300000000E-04, 0.13655200000000E-04, 0.35367300000000E-04
+                    1-D ARRAY TYPE(StringType) :: mat_names=cr-50, cr-52, cr-53, cr-54, fe-54, fe-56, fe-57, fe-58, ni-58, ni-60, ni-61, ni-62, ni-64, zr-90, zr-91, zr-92, zr-94, zr-96, sn-112, sn-114, sn-115, sn-116, sn-117, sn-118, sn-119, sn-120, sn-122, sn-124, hf-174, hf-176, hf-177, hf-178, hf-179, hf-180
+                TYPE(ParamType_List) :: Material_21=
+                    INTEGER(SNK) :: ID=           21
+                    REAL(SDK) :: density=  6.560000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=zirc4
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.41736900000000E-04, 0.83698800000000E-03, 0.96736100000000E-04, 0.24533900000000E-04, 0.11855600000000E-03, 0.19299200000000E-02, 0.45367500000000E-04, 0.61434700000000E-05, 0.49808600000000    , 0.10983000000000    , 0.16972300000000    , 0.17574400000000    , 0.28916800000000E-01, 0.13258600000000E-03, 0.91824300000000E-04, 0.47719000000000E-04, 0.20584200000000E-02, 0.10966500000000E-02, 0.34879900000000E-02, 0.12475800000000E-02, 0.47715300000000E-02, 0.68940800000000E-03, 0.87629300000000E-03, 0.15592600000000E-06, 0.51850400000000E-05, 0.18439300000000E-04, 0.27197300000000E-04, 0.13655200000000E-04, 0.35367300000000E-04
+                    1-D ARRAY TYPE(StringType) :: mat_names=cr-50, cr-52, cr-53, cr-54, fe-54, fe-56, fe-57, fe-58, zr-90, zr-91, zr-92, zr-94, zr-96, sn-112, sn-114, sn-115, sn-116, sn-117, sn-118, sn-119, sn-120, sn-122, sn-124, hf-174, hf-176, hf-177, hf-178, hf-179, hf-180
+                TYPE(ParamType_List) :: Material_22=
+                    INTEGER(SNK) :: ID=           22
+                    REAL(SDK) :: density=  6.559340000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=zirc4-xhf
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.41741100000000E-04, 0.83707200000000E-03, 0.96745800000000E-04, 0.24536400000000E-04, 0.11856800000000E-03, 0.19301100000000E-02, 0.45372000000000E-04, 0.61440900000000E-05, 0.49813600000000    , 0.10984100000000    , 0.16974000000000    , 0.17576200000000    , 0.28919700000000E-01, 0.13259900000000E-03, 0.91833500000000E-04, 0.47723800000000E-04, 0.20586300000000E-02, 0.10967600000000E-02, 0.34883400000000E-02, 0.12477100000000E-02, 0.47720100000000E-02, 0.68947700000000E-03, 0.87638100000000E-03
+                    1-D ARRAY TYPE(StringType) :: mat_names=cr-50, cr-52, cr-53, cr-54, fe-54, fe-56, fe-57, fe-58, zr-90, zr-91, zr-92, zr-94, zr-96, sn-112, sn-114, sn-115, sn-116, sn-117, sn-118, sn-119, sn-120, sn-122, sn-124
+                TYPE(ParamType_List) :: Material_23=
+                    INTEGER(SNK) :: ID=           23
+                    REAL(SDK) :: density=  6.506000000000000    
+                    LOGICAL(SBK) :: fissionable= F
+                    TYPE(StringType) :: key_name=zr
+                    1-D ARRAY REAL(SDK) :: mat_fracs=0.50706100000000    
+                                                     0.11180900000000    
+                                                     0.17278100000000    
+                                                     0.17891100000000    
+                                                     0.29437900000000E-01
+                    1-D ARRAY TYPE(StringType) :: mat_names=zr-90
+                                                            zr-91
+                                                            zr-92
+                                                            zr-94
+                                                            zr-96
+        TYPE(ParamType_List) :: ASSEMBLIES=
+            TYPE(ParamType_List) :: Assembly_1=
+                TYPE(StringType) :: assemlabel=ASSY
+                INTEGER(SNK) :: num_pins=           17
+                REAL(SDK) :: ppitch=  1.260000000000000    
+                1-D ARRAY REAL(SDK) :: axial_elevations= 0.0000000000000    
+                                                         1.0000000000000    
+                1-D ARRAY TYPE(StringType) :: axial_labels=LAT
+                REAL(SDK) :: upper_nozzle_height=  0.000000000000000    
+                REAL(SDK) :: lower_nozzle_height=  0.000000000000000    
+                INTEGER(SNK) :: NumGridTypes=            0
+                TYPE(ParamType_List) :: CellMaps=
+                    TYPE(ParamType_List) :: CellMap_1=
+                        TYPE(StringType) :: latlabel=LAT
+                        1-D ARRAY INTEGER(SNK) :: iassemindices=            1
+                        1-D ARRAY TYPE(StringType) :: latcellmap=1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+                INTEGER(SNK) :: NumCellMaps=            1
+                TYPE(ParamType_List) :: Cells=
+                    TYPE(ParamType_List) :: Cell_1=
+                        TYPE(StringType) :: type=fuel
+                        TYPE(StringType) :: label=1
+                        INTEGER(SNK) :: num_rings=            3
+                        1-D ARRAY REAL(SDK) :: radii=0.40960000000000    
+                                                     0.41800000000000    
+                                                     0.47500000000000    
+                        1-D ARRAY TYPE(StringType) :: mats=U31
+                                                           he
+                                                           zirc4
+                    TYPE(ParamType_List) :: Cell_2=
+                        TYPE(StringType) :: type=other
+                        TYPE(StringType) :: label=2
+                        INTEGER(SNK) :: num_rings=            2
+                        1-D ARRAY REAL(SDK) :: radii=0.56100000000000    
+                                                     0.60200000000000    
+                        1-D ARRAY TYPE(StringType) :: mats=mod
+                                                           zirc4
+                INTEGER(SNK) :: NumCells=            2
+                TYPE(ParamType_List) :: Materials=
+                    TYPE(ParamType_List) :: Fuel_1=
+                        INTEGER(SNK) :: ID=           24
+                        TYPE(StringType) :: key_name=U31
+                        REAL(SDK) :: density=  10.25700000000000    
+                        1-D ARRAY REAL(SDK) :: enrichments=0.26347000000000E-03
+                                                           0.31000000000000E-01
+                                                           0.14260000000000E-03
+                                                           0.96859393000000    
+                                                            0.0000000000000    
+                        1-D ARRAY TYPE(StringType) :: fuel_names=u-234
+                                                                 u-235
+                                                                 u-236
+                                                                 u-238
+                                                                 o-16
+                        REAL(SDK) :: thden=  94.50000000000000    
+        TYPE(ParamType_List) :: CONTROLS=
+            INTEGER(SNK) :: NControlRods=            0
+        TYPE(ParamType_List) :: INSERTS=
+            INTEGER(SNK) :: NInserts=            0
+        TYPE(ParamType_List) :: DETECTORS=
+            INTEGER(SNK) :: NDetectors=            0
+        TYPE(ParamType_List) :: MPACT=
+            REAL(SDK) :: ray_spacing= 0.5000000000000000E-01
+            TYPE(ParamType_List) :: PinMeshGeom=
+                REAL(SDK) :: AziCutoff= 0.1250000000000000E-01
+            REAL(SDK) :: shield_ray_spacing= 0.5000000000000000E-01
+            TYPE(StringType) :: moc_kernel=mg
+            TYPE(StringType) :: grid_treatment=equal_mass
+            TYPE(ParamType_List) :: quad_set=
+                TYPE(StringType) :: quad_type=CHEBYSHEV-YAMAMOTO
+                TYPE(StringType) :: shield_quad_type=CHEBYSHEV-YAMAMOTO
+                INTEGER(SNK) :: azimuthals_octant=           16
+                INTEGER(SNK) :: polars_octant=            2
+                INTEGER(SNK) :: shield_azimuthals_octant=            8
+                INTEGER(SNK) :: shield_polars_octant=            2
+            TYPE(StringType) :: rod_treatment=POLYNOMIAL
+            TYPE(ParamType_List) :: OPTION=
+                TYPE(ParamType_List) :: TH=
+                    LOGICAL(SBK) :: useBisonTemps= F
+                    TYPE(StringType) :: coupling_method=CTF
+                    REAL(SDK) :: sth_dhfrac= 0.2600000000000000E-01
+                    REAL(SDK) :: sth_hgap=  5678.300000000000    
+                    TYPE(StringType) :: sth_channeltype=ASSEM
+                    LOGICAL(SBK) :: CTFTable= T
+                    LOGICAL(SBK) :: sth_avgpin= F
+            TYPE(ParamType_List) :: iteration_control=
+                REAL(SDK) :: flux_tolerance= 0.5000000000000000E-04
+                REAL(SDK) :: k_tolerance= 0.1000000000000000E-05
+                INTEGER(SNK) :: num_outers=          500
+                INTEGER(SNK) :: num_inners=            1
+                INTEGER(SNK) :: up_scatter=            1
+                TYPE(StringType) :: scattering=TCP0
+                TYPE(StringType) :: reflscattering=NULL
+            TYPE(ParamType_List) :: parallel_env=
+                INTEGER(SNK) :: num_space=            1
+                INTEGER(SNK) :: num_angle=            1
+                INTEGER(SNK) :: num_energy=            1
+                INTEGER(SNK) :: num_threads=            1
+                TYPE(StringType) :: method=FullCore
+                TYPE(ParamType_List) :: Partition Options=
+                    INTEGER(SNK) :: xdim=            1
+                    INTEGER(SNK) :: ydim=            1
+                    INTEGER(SNK) :: zdim=            1
+                    2-D ARRAY INTEGER(SNK) :: fileValues= ...
+                                                                      1            1            1
+                                                                      1            1            1
+                TYPE(StringType) :: filename=./partition.txt
+            TYPE(ParamType_List) :: DEPLETION=
+                TYPE(StringType) :: dep_edit=FALSE
+                INTEGER(SNK) :: dep_substep=            3
+                TYPE(StringType) :: dep_kernel=origen
+                TYPE(StringType) :: dep_filename=origen_data_paths_casl2.1.txt
+            TYPE(ParamType_List) :: CMFD=
+                TYPE(StringType) :: cmfd=ADCMFD
+                TYPE(StringType) :: solver=MGNODE
+                TYPE(StringType) :: eigen_solver=POWER
+                INTEGER(SNK) :: num_outers=           20
+                REAL(SDK) :: k_shift=  1.500000000000000    
+                REAL(SDK) :: cmfd_shift_c0= 0.1000000000000000E-01
+                REAL(SDK) :: k_shift_1G=  1.500000000000000    
+                REAL(SDK) :: cmfd_relaxation=  1.000000000000000    
+                TYPE(StringType) :: cmfd_shift_method=constant
+                TYPE(StringType) :: cmfd_shift_method_1G=sdws-ileps
+                REAL(SDK) :: rbsor_relax=  1.000000000000000    
+                INTEGER(SNK) :: num_inners=           -1
+                INTEGER(SNK) :: num_inners_1G=           -1
+                LOGICAL(SBK) :: angle_decomp= T
+                LOGICAL(SBK) :: linear_prolongation= F
+                LOGICAL(SBK) :: lcmfd_nodal= F
+                INTEGER(SNK) :: ncmfd_per_nodal=            5
+            TYPE(ParamType_List) :: 2D1D=
+                REAL(SDK) :: under_relax=  1.000000000000000    
+                LOGICAL(SBK) :: splitTL= T
+                TYPE(StringType) :: TLtreatment=LFLAT
+                TYPE(StringType) :: nodal_method=SP3                                                                                                                                                                                                     
+            TYPE(ParamType_List) :: xs_library=
+                TYPE(StringType) :: xs_type=ORNL
+                TYPE(StringType) :: xs_filename=mpact51g_71_v4.2m5_12062016_sph.fmt
+                TYPE(StringType) :: res_up_scatter=TRUE
+                INTEGER(SNK) :: subgroup_set=            4
+                TYPE(StringType) :: hdf5_mats_filename=FALSE
+            TYPE(StringType) :: vis_edits=CORE
+            TYPE(StringType) :: ppm_method=2
+            TYPE(StringType) :: rr_edits=NONE
+            TYPE(StringType) :: verbose_info=F
+            TYPE(StringType) :: verbose_warn=F
+            TYPE(StringType) :: verbose_debugwarn=F
+            TYPE(ParamType_List) :: Restart=
+                TYPE(StringType) :: compress=5
+                TYPE(StringType) :: mode=I
+            LOGICAL(SBK) :: JaggedCore= T
+            TYPE(ParamType_List) :: mesh=
+                TYPE(StringType) :: meshing_method=NONFUEL
+                REAL(SDK) :: automesh_bounds_max=  20.00000000000000    
+                REAL(SDK) :: automesh_bounds_min=  2.000000000000000    
+                INTEGER(SNK) :: crud_mesh_div=            1
+                TYPE(ParamType_List) :: PinMeshGeom=
+                    TYPE(ParamType_List) :: CustomMesh=
+                        TYPE(ParamType_List) :: 1=
+                            TYPE(StringType) :: name=fuel
+                            1-D ARRAY INTEGER(SNK) :: nsubr=            3
+                                                                        1
+                                                                        1
+                            1-D ARRAY INTEGER(SNK) :: nsuba=            8
+                                                                        8
+                                                                        8
+                                                                        8
+                                                                        8
+                                                                        8
+                            INTEGER(SNK) :: nz=            1
+                        TYPE(ParamType_List) :: 2=
+                            TYPE(StringType) :: name=gtube
+                            1-D ARRAY INTEGER(SNK) :: nsubr=            3
+                                                                        1
+                            1-D ARRAY INTEGER(SNK) :: nsuba=            8
+                                                                        8
+                                                                        8
+                                                                        8
+                                                                        8
+                            INTEGER(SNK) :: nz=            1
+                        INTEGER(SNK) :: n=            2
+
+         ============== Axial Mesh Data ==============
+         =============================================
+         AutoMesh Method        =          NONFUEL
+         Minimum Axial Mesh     =  2.0000000000000    
+         Maximum Axial Mesh     =  20.000000000000    
+         Number of Axial Meshes =      1
+         Mesh regions, starting from the bottom:
+               Mesh Region      Mesh Thickness        Lower Height      Upper Height 
+                     1         1.0000000000000        0.0000000000000        1.0000000000000    
+
+     = Product Quadrature Edits =
+
+                    Number of azimuthal angles =                   16
+                        Number of polar angles =                    2
+
+     - Azimuthal Angle -
+
+      +---------------------------------+
+      | Index | Alpha (Deg.) |  Weight  |
+      +---------------------------------+
+          1         2.812      6.250E-02
+          2         8.437      6.250E-02
+          3        14.063      6.250E-02
+          4        19.688      6.250E-02
+          5        25.312      6.250E-02
+          6        30.937      6.250E-02
+          7        36.563      6.250E-02
+          8        42.188      6.250E-02
+          9        47.812      6.250E-02
+         10        53.437      6.250E-02
+         11        59.063      6.250E-02
+         12        64.688      6.250E-02
+         13        70.312      6.250E-02
+         14        75.938      6.250E-02
+         15        81.562      6.250E-02
+         16        87.188      6.250E-02
+
+     - Polar Angle -
+
+      +---------------------------------+
+      | Index | Theta (Deg.) |  Weight  |
+      +---------------------------------+
+          1       21.340      2.129E-01
+          2       64.145      7.871E-01
+
+     =  Quadrature Errors =
+
+        --------------- 0th-Order Moment Rel. Errors (%) -----------------
+                                                     1 =   0.000000
+        --------------- 2nd-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^2 =   0.154991
+                                           (Omega_y)^2 =   0.154991
+                                           (Omega_z)^2 =   0.309983
+        --------------- 4th-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^4 =   2.509453
+                                           (Omega_y)^4 =   2.509453
+                                           (Omega_z)^4 =   5.658599
+                             (Omega_x)^2 * (Omega_y)^2 =   2.509453
+                             (Omega_x)^2 * (Omega_z)^2 =   9.262855
+                             (Omega_y)^2 * (Omega_z)^2 =   9.262855
+        --------------- 6th-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^6 =   8.445002
+                                           (Omega_y)^6 =   8.445002
+                                           (Omega_z)^6 =   1.088012
+                             (Omega_x)^4 * (Omega_y)^2 =   8.445002
+                             (Omega_x)^4 * (Omega_z)^2 =  33.103841
+                             (Omega_y)^4 * (Omega_x)^2 =   8.445002
+                             (Omega_y)^4 * (Omega_z)^2 =  33.103841
+                             (Omega_z)^4 * (Omega_x)^2 =  22.525126
+                             (Omega_z)^4 * (Omega_y)^2 =  22.525126
+               (Omega_x)^2 * (Omega_y)^2 * (Omega_z)^2 =  33.103841
+        --------------- 8th-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^8 =  16.671445
+                                           (Omega_y)^8 =  16.671445
+                                           (Omega_z)^8 =   9.458293
+                             (Omega_x)^6 * (Omega_y)^2 =  16.671445
+                             (Omega_x)^6 * (Omega_z)^2 =  57.366544
+                             (Omega_y)^6 * (Omega_x)^2 =  16.671445
+                             (Omega_y)^6 * (Omega_z)^2 =  57.366544
+                             (Omega_z)^6 * (Omega_x)^2 =  28.207974
+                             (Omega_z)^6 * (Omega_y)^2 =  28.207974
+                             (Omega_x)^4 * (Omega_y)^4 =  16.671445
+                             (Omega_x)^4 * (Omega_z)^4 =  15.421566
+                             (Omega_y)^4 * (Omega_z)^4 =  15.421566
+               (Omega_x)^4 * (Omega_y)^2 * (Omega_z)^2 =  57.366544
+               (Omega_x)^2 * (Omega_y)^4 * (Omega_z)^2 =  57.366544
+               (Omega_x)^2 * (Omega_y)^2 * (Omega_z)^4 =  15.421566
+
+     = Product Quadrature Edits =
+
+                    Number of azimuthal angles =                    8
+                        Number of polar angles =                    2
+
+     - Azimuthal Angle -
+
+      +---------------------------------+
+      | Index | Alpha (Deg.) |  Weight  |
+      +---------------------------------+
+          1         5.625      1.250E-01
+          2        16.875      1.250E-01
+          3        28.125      1.250E-01
+          4        39.375      1.250E-01
+          5        50.625      1.250E-01
+          6        61.875      1.250E-01
+          7        73.125      1.250E-01
+          8        84.375      1.250E-01
+
+     - Polar Angle -
+
+      +---------------------------------+
+      | Index | Theta (Deg.) |  Weight  |
+      +---------------------------------+
+          1       21.340      2.129E-01
+          2       64.145      7.871E-01
+
+     =  Quadrature Errors =
+
+        --------------- 0th-Order Moment Rel. Errors (%) -----------------
+                                                     1 =   0.000000
+        --------------- 2nd-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^2 =   0.154991
+                                           (Omega_y)^2 =   0.154991
+                                           (Omega_z)^2 =   0.309983
+        --------------- 4th-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^4 =   2.509453
+                                           (Omega_y)^4 =   2.509453
+                                           (Omega_z)^4 =   5.658599
+                             (Omega_x)^2 * (Omega_y)^2 =   2.509453
+                             (Omega_x)^2 * (Omega_z)^2 =   9.262855
+                             (Omega_y)^2 * (Omega_z)^2 =   9.262855
+        --------------- 6th-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^6 =   8.445002
+                                           (Omega_y)^6 =   8.445002
+                                           (Omega_z)^6 =   1.088012
+                             (Omega_x)^4 * (Omega_y)^2 =   8.445002
+                             (Omega_x)^4 * (Omega_z)^2 =  33.103841
+                             (Omega_y)^4 * (Omega_x)^2 =   8.445002
+                             (Omega_y)^4 * (Omega_z)^2 =  33.103841
+                             (Omega_z)^4 * (Omega_x)^2 =  22.525126
+                             (Omega_z)^4 * (Omega_y)^2 =  22.525126
+               (Omega_x)^2 * (Omega_y)^2 * (Omega_z)^2 =  33.103841
+        --------------- 8th-Order Moment Rel. Errors (%) -----------------
+                                           (Omega_x)^8 =  16.671445
+                                           (Omega_y)^8 =  16.671445
+                                           (Omega_z)^8 =   9.458293
+                             (Omega_x)^6 * (Omega_y)^2 =  16.671445
+                             (Omega_x)^6 * (Omega_z)^2 =  57.366544
+                             (Omega_y)^6 * (Omega_x)^2 =  16.671445
+                             (Omega_y)^6 * (Omega_z)^2 =  57.366544
+                             (Omega_z)^6 * (Omega_x)^2 =  28.207974
+                             (Omega_z)^6 * (Omega_y)^2 =  28.207974
+                             (Omega_x)^4 * (Omega_y)^4 =  16.671445
+                             (Omega_x)^4 * (Omega_z)^4 =  15.421566
+                             (Omega_y)^4 * (Omega_z)^4 =  15.421566
+               (Omega_x)^4 * (Omega_y)^2 * (Omega_z)^2 =  57.366544
+               (Omega_x)^2 * (Omega_y)^4 * (Omega_z)^2 =  57.366544
+               (Omega_x)^2 * (Omega_y)^2 * (Omega_z)^4 =  15.421566
+
+     = Material Type Edits =
+
+
+         Material Name            = U31 !Assembly_1
+         Material ID Number       =     25
+         Number of Isotopes       =      5
+         Is Material Fluid?       = F
+         Is Material Fuel?        = T
+         Is Material Resonant?    = T
+         Is Material Depletable?  = T
+         Material Temperature (K) =   900.00    
+         Material Density (g/cc)  =   10.257    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           92234     6.129469234136086E-06
+                           92235     7.181185855835786E-04
+                           92236     3.289327180354224E-06
+                           92238     2.215417364231687E-02
+                            8001     4.576342204862981E-02
+
+
+         Material Name            = zr
+         Material ID Number       =     24
+         Number of Isotopes       =      5
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   6.5060    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           40090     2.209747580369173E-02
+                           40091     4.818934039928470E-03
+                           40092     7.365831777880282E-03
+                           40094     7.464613285903871E-03
+                           40096     1.202584583591073E-03
+
+
+         Material Name            = zirc4-xhf
+         Material ID Number       =     23
+         Number of Isotopes       =     23
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   6.5593    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           24050     3.301214460317664E-06
+                           24052     6.366054680227261E-05
+                           24053     7.218596822528867E-06
+                           24054     1.796867513309870E-06
+                           26054     8.683058122549543E-06
+                           26056     1.363054768528484E-04
+                           26057     3.147885442351678E-06
+                           26058     4.189262132377426E-07
+                           40090     2.188650781010286E-02
+                           40091     4.772926874956734E-03
+                           40092     7.295517351633478E-03
+                           40094     7.393351258706664E-03
+                           40096     1.191101232180847E-03
+                           50112     4.680632646792711E-06
+                           50114     3.184776528251959E-06
+                           50115     1.640644000522108E-06
+                           50116     7.016161461847823E-05
+                           50117     3.705918939155372E-05
+                           50118     1.168717254847636E-04
+                           50119     4.145056608808932E-05
+                           50120     1.572121117126150E-04
+                           50122     2.234167658152225E-05
+                           50124     2.793918947437407E-05
+
+
+         Material Name            = zirc4
+         Material ID Number       =     22
+         Number of Isotopes       =     29
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   6.5600    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           24050     3.301214425665012E-06
+                           24052     6.366056335347724E-05
+                           24053     7.218599327674959E-06
+                           24054     1.796865213660143E-06
+                           26054     8.683052929648038E-06
+                           26056     1.363057726342521E-04
+                           26057     3.147889943163237E-06
+                           26058     4.189260874533580E-07
+                           40090     2.188651296623144E-02
+                           40091     4.772929094597762E-03
+                           40092     7.295520682960717E-03
+                           40094     7.393337938546856E-03
+                           40096     1.191101627774289E-03
+                           50112     4.680644676297663E-06
+                           50114     3.184777892905842E-06
+                           50115     1.640644051402326E-06
+                           50116     7.016151639406619E-05
+                           50117     3.705920104193035E-05
+                           50118     1.168717576861274E-04
+                           50119     4.145041763363620E-05
+                           50120     1.572121153620019E-04
+                           50122     2.234168851097712E-05
+                           50124     2.793919497357911E-05
+                           72174     3.541386707768866E-09
+                           72176     1.164230165222162E-07
+                           72177     4.116857397409631E-07
+                           72178     6.038070773496498E-07
+                           72179     3.014604651875505E-07
+                           72180     7.764483265923927E-07
+
+
+         Material Name            = zirc2
+         Material ID Number       =     21
+         Number of Isotopes       =     34
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   6.5600    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           24050     3.301214425665012E-06
+                           24052     6.366101970814436E-05
+                           24053     7.218584403361642E-06
+                           24054     1.796843241631070E-06
+                           26054     5.581993986243845E-06
+                           26056     8.762564403402086E-05
+                           26057     2.023655925328832E-06
+                           26058     2.693080203018683E-07
+                           28058     2.520143136638347E-05
+                           28060     9.707620809139205E-06
+                           28061     4.219810844731416E-07
+                           28062     1.345473854711431E-06
+                           28064     3.426499518053562E-07
+                           40090     2.189099497199461E-02
+                           40091     4.773885157969166E-03
+                           40092     7.296982168458973E-03
+                           40094     7.394852415091076E-03
+                           40096     1.191344652576614E-03
+                           50112     4.680679979004407E-06
+                           50114     3.184784829583590E-06
+                           50115     1.640647489538187E-06
+                           50116     7.016151639406619E-05
+                           50117     3.705920104193035E-05
+                           50118     1.168714226170542E-04
+                           50119     4.145041763363620E-05
+                           50120     1.572124448414673E-04
+                           50122     2.234175332510319E-05
+                           50124     2.793916309018511E-05
+                           72174     3.541386707768866E-09
+                           72176     1.164230165222162E-07
+                           72177     4.116857397409631E-07
+                           72178     6.038070773496498E-07
+                           72179     3.014604651875505E-07
+                           72180     7.764483265923927E-07
+
+
+         Material Name            = water
+         Material ID Number       =     20
+         Number of Isotopes       =      2
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =  0.74300    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            1001     4.968677071088082E-02
+                            8016     2.484348331572063E-02
+
+
+         Material Name            = waba
+         Material ID Number       =     19
+         Number of Isotopes       =      5
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = T
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   3.6500    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            5010     2.990137669510438E-03
+                            5011     1.203569294610234E-02
+                            6000     3.759455592829826E-03
+                            8016     5.858336054461340E-02
+                           13027     3.904459666822438E-02
+
+
+         Material Name            = tungsten
+         Material ID Number       =     18
+         Number of Isotopes       =      5
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   19.300    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            8016     8.719823511129478E-04
+                           74182     1.692757179059054E-02
+                           74183     9.090995316775249E-03
+                           74184     1.935961633161628E-02
+                           74186     1.776934462810970E-02
+
+
+         Material Name            = ss
+         Material ID Number       =     17
+         Number of Isotopes       =     17
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   8.0000    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            6000     3.208965159714260E-04
+                           14000     1.715383657372789E-03
+                           15031     6.999431156968202E-05
+                           24050     7.649192995285634E-04
+                           24052     1.475073706441829E-02
+                           24053     1.672615114511136E-03
+                           24054     4.163485148259374E-04
+                           25055     1.753879914035959E-03
+                           26054     3.447786493910686E-03
+                           26056     5.412285267531677E-02
+                           26057     1.249929271261278E-03
+                           26058     1.663431595905801E-04
+                           28058     5.308575803254905E-03
+                           28060     2.044850559559879E-03
+                           28061     8.888800066852854E-05
+                           28062     2.834148822304512E-04
+                           28064     7.217746996432661E-05
+
+
+         Material Name            = sio2
+         Material ID Number       =     16
+         Number of Isotopes       =      2
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   2.1800    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            8016     4.371175613940493E-02
+                           14000     2.184944031803399E-02
+
+
+         Material Name            = pyrex-vera
+         Material ID Number       =     15
+         Number of Isotopes       =      4
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = T
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   2.2442    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            5010     9.607733901814578E-04
+                            5011     3.891629242209973E-03
+                            8016     4.665510921219753E-02
+                           14000     1.968159957703385E-02
+
+
+         Material Name            = pyrex
+         Material ID Number       =     14
+         Number of Isotopes       =      6
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = T
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   2.3425    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            5010     9.607633369884151E-04
+                            5011     3.867196137715749E-03
+                            8016     4.718464234228561E-02
+                           11023     2.515841089849737E-03
+                           13027     5.228317490555433E-04
+                           14000     1.893571424773770E-02
+
+
+         Material Name            = inc
+         Material ID Number       =     13
+         Number of Isotopes       =     15
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   8.1900    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           14000     4.390239804532583E-03
+                           22000     2.575316075984435E-03
+                           24050     6.182164352543395E-04
+                           24052     1.192168514798812E-02
+                           24053     1.351826065811920E-03
+                           24054     3.364972442597208E-04
+                           26054     3.613493072854896E-04
+                           26056     5.672413484443086E-03
+                           26057     1.310012609349080E-04
+                           26058     1.743376810288795E-05
+                           28058     4.176032749117611E-02
+                           28060     1.608603604805462E-02
+                           28061     6.992481185610527E-04
+                           28062     2.229511483147404E-03
+                           28064     5.677901588934570E-04
+
+
+         Material Name            = he
+         Material ID Number       =     12
+         Number of Isotopes       =      1
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =  0.17860E-03
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            2004     2.687139445345525E-05
+
+
+         Material Name            = gap
+         Material ID Number       =     11
+         Number of Isotopes       =      1
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =  0.17860E-03
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            2004     2.687139445345525E-05
+
+
+         Material Name            = gad
+         Material ID Number       =     10
+         Number of Isotopes       =      8
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   7.4070    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           64152     4.922277140216844E-05
+                           64154     5.365194105723714E-04
+                           64155     3.642409678417139E-03
+                           64156     5.037862592133476E-03
+                           64157     3.851615572430599E-03
+                           64158     6.113353184987956E-03
+                           64160     5.379962243500877E-03
+                            8016     3.691651861013992E-02
+
+
+         Material Name            = cs
+         Material ID Number       =      9
+         Number of Isotopes       =      5
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   7.8500    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            6000     3.936034735161346E-03
+                           26054     4.898479218750029E-03
+                           26056     7.689568444450796E-02
+                           26057     1.775859710822796E-03
+                           26058     2.363336312877511E-04
+
+
+         Material Name            = clad
+         Material ID Number       =      8
+         Number of Isotopes       =     29
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   6.5600    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           24050     3.301214425665012E-06
+                           24052     6.366056335347724E-05
+                           24053     7.218599327674959E-06
+                           24054     1.796865213660143E-06
+                           26054     8.683052929648038E-06
+                           26056     1.363057726342521E-04
+                           26057     3.147889943163237E-06
+                           26058     4.189260874533580E-07
+                           40090     2.188651296623144E-02
+                           40091     4.772929094597762E-03
+                           40092     7.295520682960717E-03
+                           40094     7.393337938546856E-03
+                           40096     1.191101627774289E-03
+                           50112     4.680644676297663E-06
+                           50114     3.184777892905842E-06
+                           50115     1.640644051402326E-06
+                           50116     7.016151639406619E-05
+                           50117     3.705920104193035E-05
+                           50118     1.168717576861274E-04
+                           50119     4.145041763363620E-05
+                           50120     1.572121153620019E-04
+                           50122     2.234168851097712E-05
+                           50124     2.793919497357911E-05
+                           72174     3.541386707768866E-09
+                           72176     1.164230165222162E-07
+                           72177     4.116857397409631E-07
+                           72178     6.038070773496498E-07
+                           72179     3.014604651875505E-07
+                           72180     7.764483265923927E-07
+
+
+         Material Name            = boron
+         Material ID Number       =      7
+         Number of Isotopes       =      2
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = T
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   2.3700    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            5010     2.627146041496409E-02
+                            5011     1.057465092070135E-01
+
+
+         Material Name            = b4c
+         Material ID Number       =      6
+         Number of Isotopes       =      3
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = T
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   1.7597    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            5010     1.526897954152818E-02
+                            5011     6.145937762574993E-02
+                            6000     1.918210744009613E-02
+
+
+         Material Name            = b2o3
+         Material ID Number       =      5
+         Number of Isotopes       =      3
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = T
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   2.5500    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            5010     8.778862299417826E-03
+                            5011     3.533611721328765E-02
+                            8016     6.619098863907140E-02
+
+
+         Material Name            = al2o3
+         Material ID Number       =      4
+         Number of Isotopes       =      2
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   3.9600    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           13027     4.678412560982730E-02
+                            8016     7.017608691348813E-02
+
+
+         Material Name            = air
+         Material ID Number       =      3
+         Number of Isotopes       =      2
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =  0.11890E-02
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            7014     3.911237573378745E-05
+                            8016     1.052455213030102E-05
+
+
+         Material Name            = aic
+         Material ID Number       =      2
+         Number of Isotopes       =      5
+         Is Material Fluid?       = F
+         Is Material Fuel?        = F
+         Is Material Resonant?    = T
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =   10.200    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                           47107     2.361586503053127E-02
+                           47109     2.194033856425754E-02
+                           49113     3.442622651762249E-04
+                           49115     7.680468713346326E-03
+                           48000     2.732196427132196E-03
+
+
+         Material Name            = mod
+         Material ID Number       =      1
+         Number of Isotopes       =      4
+         Is Material Fluid?       = T
+         Is Material Fuel?        = F
+         Is Material Resonant?    = F
+         Is Material Depletable?  = F
+         Material Temperature (K) =   565.00    
+         Material Density (g/cc)  =  0.74300    
+         XS Component Information:    
+               XS Library File Name     = /usr/local/casl/vera-3.8.0/share/data/MPACT/mpact51g_71_v4.2m5_12062016_sph.fmt
+               XS Library Tag           = 
+               +------------------------------------------+
+               | XS Record Name | Number Density (#/b-cm) |
+               +------------------------------------------+
+                            1001     4.962235167679856E-02
+                            8016     2.481117583839928E-02
+                            5010     1.070705369680798E-05
+                            5011     4.309723623690046E-05
+
+
+     = Parallel Decomposition =
+
+                          Number of Spatial Domains =        1
+                          Number of Angular Domains =        1
+                           Number of Energy Domains =        1
+                           Total MPI Processes used =        1
+      Number of OpenMP threads used per MPI process =        1
+                    Total Number of Processors used =        1
+
+ +--------------------------------------------------------------------------------------------------------+
+ | World | Space | Angle | Energy |  nMesh  | nAngles | First Mesh | Last Mesh | First Angle | Last Angle |
+ | Rank  | Rank  | Rank  |  Rank  |         |         |   Index    |   Index   |    Index    |   Index    |
+ +--------------------------------------------------------------------------------------------------------+
+        0       0       0        0         1        32            1           1             1           32
+
+     = Core Mesh Edits =
+
+            Total Number of Assembly Types    =   1
+            Total Number of LatticeMesh Types =   1
+            Total Number of Module Types      =   1
+            Total Number of Pin Types         =  12
+            Total Number of Pin Mesh Types    =  12
+
+            Total Core Mass (kg)  =     1.258
+
+     - Assembly Index Map -
+        1
+
+
+     - Assembly ID Map -
+        1
+
+
+********************************************************************************
+******************************* STATE_0001 EDITS *******************************
+********************************************************************************
+
+    k-eff = 1.1692968
+
+         =======* StateType *======= 
+                    1 INTEGER(SNK)               :: iState=            1
+                    2 TYPE(StringType)           :: title=
+                    3 TYPE(StringType)           :: op_date=
+                    4 REAL(SDK)                  :: rated_power= 0.1208000000000000E-01 !The rated power for the problem in units of MegaWatts.
+                    5 REAL(SDK)                  :: power=  100.0000000000000     !The percent of the core rated full power.
+                    6 REAL(SDK)                  :: rated_flow= 0.3149945000000000    
+                    7 REAL(SDK)                  :: flow=  100.0000000000000    
+                    8 TYPE(StringType)           :: rated_flow_units=KG/S
+                    9 REAL(SDK)                  :: bypass=  0.000000000000000    
+                   10 REAL(SDK)                  :: tinlet=  291.8500000000000    
+                   11 REAL(SDK)                  :: pressure=  0.000000000000000    
+                   12 REAL(SDK)                  :: exposure=  0.000000000000000    
+                   13 REAL(SDK)                  :: exposure_efpd=  0.000000000000000    
+                   14 REAL(SDK)                  :: exposure_hours=  0.000000000000000    
+                   15 REAL(SDK)                  :: hours=  0.000000000000000    
+                   16 LOGICAL(SBK)               :: reset_sol= F
+                   17 LOGICAL(SBK)               :: feedback= F
+                   18 REAL(SDK)                  :: modden= 0.7430000000000000    
+                   19 REAL(SDK)                  :: coolden= 0.7430000000000000    
+                   20 REAL(SDK)                  :: tfuel=  900.0000000000000    
+                   21 REAL(SDK)                  :: thexp_tfuel=  293.0000000000000    
+                   22 REAL(SDK)                  :: thexp_tmod=  293.0000000000000    
+                   23 REAL(SDK)                  :: thexp_tclad=  293.0000000000000    
+                   24 1-D ARRAY REAL(SDK)        :: void= 0.0000000000000    
+                   25 1-D ARRAY INTEGER(SNK)     :: bank_pos=            0
+                   26 1-D ARRAY TYPE(StringType) :: bank_labels=
+                   27 TYPE(StringType)           :: search=keff
+                   28 TYPE(StringType)           :: search_bank=D
+                   29 REAL(SDK)                  :: kcrit=  1.000000000000000    
+                   30 REAL(SDK)                  :: boron=  1300.000000000000    
+                   31 REAL(SDK)                  :: b10= 0.1990000000000000    
+                   32 LOGICAL(SBK)               :: b10_depl= F
+                   33 TYPE(StringType)           :: xenopt=
+                   34 TYPE(StringType)           :: samopt=
+                   35 REAL(SDK)                  :: rlx_xesm=  1.000000000000000    
+                   36 LOGICAL(SBK)               :: trans_on= F
+                   37 1-D ARRAY INTEGER(SNK)     :: to_matids=            0
+                   38 1-D ARRAY INTEGER(SNK)     :: from_matids=            0
+                   39 1-D ARRAY INTEGER(SNK)     :: comp_ids=            0
+                   40 1-D ARRAY REAL(SDK)        :: trans_amounts= 0.0000000000000    
+                   41 1-D ARRAY TYPE(StringType) :: mat_units=
+                   42 1-D ARRAY TYPE(StringType) :: time_units=
+                   43 1-D ARRAY REAL(SDK)        :: cool_chem= 0.0000000000000    
+                   44 REAL(SDK)                  :: uniform_crud_thickness=  0.000000000000000    
+                   45 REAL(SDK)                  :: uniform_crud_mass=  0.000000000000000    
+                   46 REAL(SDK)                  :: uniform_crud_boron_mass=  0.000000000000000    
+
+================================================================================
+                                 3-D Pin Powers                                  
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0352  1.0361  0.0000  1.0344  1.0313  0.0000  1.0107  0.9762 
+  2  1.0352  1.0098  1.0107  1.0366  1.0086  1.0062  1.0248  0.9888  0.9725 
+  3  1.0361  1.0107  1.0105  1.0372  1.0114  1.0097  1.0268  0.9891  0.9724 
+  4  0.0000  1.0366  1.0372  0.0000  1.0438  1.0437  0.0000  1.0113  0.9742 
+  5  1.0344  1.0086  1.0114  1.0438  1.0336  1.0515  1.0363  0.9834  0.9655 
+  6  1.0313  1.0062  1.0097  1.0436  1.0515  0.0000  1.0171  0.9639  0.9557 
+  7  0.0000  1.0248  1.0268  0.0000  1.0363  1.0171  0.9739  0.9489  0.9468 
+  8  1.0107  0.9888  0.9891  1.0113  0.9834  0.9639  0.9489  0.9401  0.9430 
+  9  0.9762  0.9725  0.9724  0.9742  0.9655  0.9557  0.9468  0.9430  0.9485 
+
+================================================================================
+                              3-D Assembly Powers                                
+================================================================================
+Plane    1
+y/x       1
+  1  1.0000 
+================================================================================
+                     Axially-Integrated 2-D Assembly Powers                      
+================================================================================
+y/x       1
+  1  1.0000 
+================================================================================
+                       Axially-Integrated 2-D Pin Powers                         
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0352  1.0361  0.0000  1.0344  1.0313  0.0000  1.0107  0.9762 
+  2  1.0352  1.0098  1.0107  1.0366  1.0086  1.0062  1.0248  0.9888  0.9725 
+  3  1.0361  1.0107  1.0105  1.0372  1.0114  1.0097  1.0268  0.9891  0.9724 
+  4  0.0000  1.0366  1.0372  0.0000  1.0438  1.0437  0.0000  1.0113  0.9742 
+  5  1.0344  1.0086  1.0114  1.0438  1.0336  1.0515  1.0363  0.9834  0.9655 
+  6  1.0313  1.0062  1.0097  1.0436  1.0515  0.0000  1.0171  0.9639  0.9557 
+  7  0.0000  1.0248  1.0268  0.0000  1.0363  1.0171  0.9739  0.9489  0.9468 
+  8  1.0107  0.9888  0.9891  1.0113  0.9834  0.9639  0.9489  0.9401  0.9430 
+  9  0.9762  0.9725  0.9724  0.9742  0.9655  0.9557  0.9468  0.9430  0.9485 
+================================================================================
+                               1-D Core Powers                                  
+================================================================================
+ iz      Midpint      Min z       Max z    Power
+   1      0.5000     0.0000      1.0000    1.0000
+
+
+********************************************************************************
+******************************* STATE_0002 EDITS *******************************
+********************************************************************************
+
+    k-eff = 1.1259854
+
+         =======* StateType *======= 
+                    1 INTEGER(SNK)               :: iState=            2
+                    2 TYPE(StringType)           :: title=
+                    3 TYPE(StringType)           :: op_date=
+                    4 REAL(SDK)                  :: rated_power= 0.1208000000000000E-01 !The rated power for the problem in units of MegaWatts.
+                    5 REAL(SDK)                  :: power=  100.0000000000000     !The percent of the core rated full power.
+                    6 REAL(SDK)                  :: rated_flow= 0.3149945000000000    
+                    7 REAL(SDK)                  :: flow=  100.0000000000000    
+                    8 TYPE(StringType)           :: rated_flow_units=KG/S
+                    9 REAL(SDK)                  :: bypass=  0.000000000000000    
+                   10 REAL(SDK)                  :: tinlet=  291.8500000000000    
+                   11 REAL(SDK)                  :: pressure=  0.000000000000000    
+                   12 REAL(SDK)                  :: exposure= 0.3840791333019468    
+                   13 REAL(SDK)                  :: exposure_efpd=  10.00000000000000    
+                   14 REAL(SDK)                  :: exposure_hours=  240.0000000000000    
+                   15 REAL(SDK)                  :: hours=  0.000000000000000    
+                   16 LOGICAL(SBK)               :: reset_sol= F
+                   17 LOGICAL(SBK)               :: feedback= F
+                   18 REAL(SDK)                  :: modden= 0.7430000000000000    
+                   19 REAL(SDK)                  :: coolden= 0.7430000000000000    
+                   20 REAL(SDK)                  :: tfuel=  900.0000000000000    
+                   21 REAL(SDK)                  :: thexp_tfuel=  293.0000000000000    
+                   22 REAL(SDK)                  :: thexp_tmod=  293.0000000000000    
+                   23 REAL(SDK)                  :: thexp_tclad=  293.0000000000000    
+                   24 1-D ARRAY REAL(SDK)        :: void= 0.0000000000000    
+                   25 1-D ARRAY INTEGER(SNK)     :: bank_pos=            0
+                   26 1-D ARRAY TYPE(StringType) :: bank_labels=
+                   27 TYPE(StringType)           :: search=keff
+                   28 TYPE(StringType)           :: search_bank=D
+                   29 REAL(SDK)                  :: kcrit=  1.000000000000000    
+                   30 REAL(SDK)                  :: boron=  1300.000000000000    
+                   31 REAL(SDK)                  :: b10= 0.1990000000000000    
+                   32 LOGICAL(SBK)               :: b10_depl= F
+                   33 TYPE(StringType)           :: xenopt=
+                   34 TYPE(StringType)           :: samopt=
+                   35 REAL(SDK)                  :: rlx_xesm=  1.000000000000000    
+                   36 LOGICAL(SBK)               :: trans_on= F
+                   37 1-D ARRAY INTEGER(SNK)     :: to_matids=            0
+                   38 1-D ARRAY INTEGER(SNK)     :: from_matids=            0
+                   39 1-D ARRAY INTEGER(SNK)     :: comp_ids=            0
+                   40 1-D ARRAY REAL(SDK)        :: trans_amounts= 0.0000000000000    
+                   41 1-D ARRAY TYPE(StringType) :: mat_units=
+                   42 1-D ARRAY TYPE(StringType) :: time_units=
+                   43 1-D ARRAY REAL(SDK)        :: cool_chem= 0.0000000000000    
+                   44 REAL(SDK)                  :: uniform_crud_thickness=  0.000000000000000    
+                   45 REAL(SDK)                  :: uniform_crud_mass=  0.000000000000000    
+                   46 REAL(SDK)                  :: uniform_crud_boron_mass=  0.000000000000000    
+
+================================================================================
+                                 3-D Pin Powers                                  
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0353  1.0363  0.0000  1.0346  1.0316  0.0000  1.0110  0.9758 
+  2  1.0353  1.0093  1.0102  1.0368  1.0082  1.0058  1.0251  0.9886  0.9721 
+  3  1.0363  1.0102  1.0100  1.0374  1.0110  1.0095  1.0272  0.9889  0.9720 
+  4  0.0000  1.0368  1.0374  0.0000  1.0442  1.0441  0.0000  1.0118  0.9740 
+  5  1.0346  1.0082  1.0110  1.0442  1.0338  1.0524  1.0371  0.9833  0.9653 
+  6  1.0316  1.0058  1.0095  1.0441  1.0524  0.0000  1.0178  0.9636  0.9555 
+  7  0.0000  1.0251  1.0272  0.0000  1.0371  1.0178  0.9739  0.9486  0.9466 
+  8  1.0110  0.9886  0.9889  1.0118  0.9833  0.9636  0.9486  0.9398  0.9429 
+  9  0.9758  0.9721  0.9720  0.9740  0.9653  0.9555  0.9466  0.9429  0.9487 
+
+================================================================================
+                              3-D Assembly Powers                                
+================================================================================
+Plane    1
+y/x       1
+  1  1.0000 
+================================================================================
+                     Axially-Integrated 2-D Assembly Powers                      
+================================================================================
+y/x       1
+  1  1.0000 
+================================================================================
+                       Axially-Integrated 2-D Pin Powers                         
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0353  1.0363  0.0000  1.0346  1.0316  0.0000  1.0110  0.9758 
+  2  1.0353  1.0093  1.0102  1.0368  1.0082  1.0058  1.0251  0.9886  0.9721 
+  3  1.0363  1.0102  1.0100  1.0374  1.0110  1.0095  1.0272  0.9889  0.9720 
+  4  0.0000  1.0368  1.0374  0.0000  1.0442  1.0441  0.0000  1.0118  0.9740 
+  5  1.0346  1.0082  1.0110  1.0442  1.0338  1.0524  1.0371  0.9833  0.9653 
+  6  1.0316  1.0058  1.0095  1.0441  1.0524  0.0000  1.0178  0.9636  0.9555 
+  7  0.0000  1.0251  1.0272  0.0000  1.0371  1.0178  0.9739  0.9486  0.9466 
+  8  1.0110  0.9886  0.9889  1.0118  0.9833  0.9636  0.9486  0.9398  0.9429 
+  9  0.9758  0.9721  0.9720  0.9740  0.9653  0.9555  0.9466  0.9429  0.9487 
+================================================================================
+                               1-D Core Powers                                  
+================================================================================
+ iz      Midpint      Min z       Max z    Power
+   1      0.5000     0.0000      1.0000    1.0000
+
+
+********************************************************************************
+******************************* STATE_0003 EDITS *******************************
+********************************************************************************
+
+    k-eff = 1.1217775
+
+         =======* StateType *======= 
+                    1 INTEGER(SNK)               :: iState=            3
+                    2 TYPE(StringType)           :: title=
+                    3 TYPE(StringType)           :: op_date=
+                    4 REAL(SDK)                  :: rated_power= 0.1208000000000000E-01 !The rated power for the problem in units of MegaWatts.
+                    5 REAL(SDK)                  :: power=  100.0000000000000     !The percent of the core rated full power.
+                    6 REAL(SDK)                  :: rated_flow= 0.3149945000000000    
+                    7 REAL(SDK)                  :: flow=  100.0000000000000    
+                    8 TYPE(StringType)           :: rated_flow_units=KG/S
+                    9 REAL(SDK)                  :: bypass=  0.000000000000000    
+                   10 REAL(SDK)                  :: tinlet=  291.8500000000000    
+                   11 REAL(SDK)                  :: pressure=  0.000000000000000    
+                   12 REAL(SDK)                  :: exposure= 0.7681582666038935    
+                   13 REAL(SDK)                  :: exposure_efpd=  20.00000000000000    
+                   14 REAL(SDK)                  :: exposure_hours=  480.0000000000000    
+                   15 REAL(SDK)                  :: hours=  0.000000000000000    
+                   16 LOGICAL(SBK)               :: reset_sol= F
+                   17 LOGICAL(SBK)               :: feedback= F
+                   18 REAL(SDK)                  :: modden= 0.7430000000000000    
+                   19 REAL(SDK)                  :: coolden= 0.7430000000000000    
+                   20 REAL(SDK)                  :: tfuel=  900.0000000000000    
+                   21 REAL(SDK)                  :: thexp_tfuel=  293.0000000000000    
+                   22 REAL(SDK)                  :: thexp_tmod=  293.0000000000000    
+                   23 REAL(SDK)                  :: thexp_tclad=  293.0000000000000    
+                   24 1-D ARRAY REAL(SDK)        :: void= 0.0000000000000    
+                   25 1-D ARRAY INTEGER(SNK)     :: bank_pos=            0
+                   26 1-D ARRAY TYPE(StringType) :: bank_labels=
+                   27 TYPE(StringType)           :: search=keff
+                   28 TYPE(StringType)           :: search_bank=D
+                   29 REAL(SDK)                  :: kcrit=  1.000000000000000    
+                   30 REAL(SDK)                  :: boron=  1300.000000000000    
+                   31 REAL(SDK)                  :: b10= 0.1990000000000000    
+                   32 LOGICAL(SBK)               :: b10_depl= F
+                   33 TYPE(StringType)           :: xenopt=
+                   34 TYPE(StringType)           :: samopt=
+                   35 REAL(SDK)                  :: rlx_xesm=  1.000000000000000    
+                   36 LOGICAL(SBK)               :: trans_on= F
+                   37 1-D ARRAY INTEGER(SNK)     :: to_matids=            0
+                   38 1-D ARRAY INTEGER(SNK)     :: from_matids=            0
+                   39 1-D ARRAY INTEGER(SNK)     :: comp_ids=            0
+                   40 1-D ARRAY REAL(SDK)        :: trans_amounts= 0.0000000000000    
+                   41 1-D ARRAY TYPE(StringType) :: mat_units=
+                   42 1-D ARRAY TYPE(StringType) :: time_units=
+                   43 1-D ARRAY REAL(SDK)        :: cool_chem= 0.0000000000000    
+                   44 REAL(SDK)                  :: uniform_crud_thickness=  0.000000000000000    
+                   45 REAL(SDK)                  :: uniform_crud_mass=  0.000000000000000    
+                   46 REAL(SDK)                  :: uniform_crud_boron_mass=  0.000000000000000    
+
+================================================================================
+                                 3-D Pin Powers                                  
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0353  1.0364  0.0000  1.0346  1.0315  0.0000  1.0111  0.9757 
+  2  1.0353  1.0093  1.0102  1.0368  1.0082  1.0058  1.0251  0.9886  0.9720 
+  3  1.0364  1.0102  1.0100  1.0374  1.0110  1.0095  1.0273  0.9889  0.9720 
+  4  0.0000  1.0368  1.0374  0.0000  1.0442  1.0441  0.0000  1.0119  0.9739 
+  5  1.0346  1.0082  1.0110  1.0442  1.0339  1.0525  1.0373  0.9833  0.9652 
+  6  1.0315  1.0058  1.0095  1.0441  1.0525  0.0000  1.0178  0.9635  0.9554 
+  7  0.0000  1.0251  1.0273  0.0000  1.0373  1.0178  0.9739  0.9485  0.9466 
+  8  1.0111  0.9886  0.9889  1.0119  0.9833  0.9635  0.9485  0.9397  0.9429 
+  9  0.9757  0.9720  0.9720  0.9739  0.9652  0.9554  0.9466  0.9429  0.9487 
+
+================================================================================
+                              3-D Assembly Powers                                
+================================================================================
+Plane    1
+y/x       1
+  1  1.0000 
+================================================================================
+                     Axially-Integrated 2-D Assembly Powers                      
+================================================================================
+y/x       1
+  1  1.0000 
+================================================================================
+                       Axially-Integrated 2-D Pin Powers                         
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0353  1.0364  0.0000  1.0346  1.0315  0.0000  1.0111  0.9757 
+  2  1.0353  1.0093  1.0102  1.0368  1.0082  1.0058  1.0251  0.9886  0.9720 
+  3  1.0364  1.0102  1.0100  1.0374  1.0110  1.0095  1.0273  0.9889  0.9720 
+  4  0.0000  1.0368  1.0374  0.0000  1.0442  1.0441  0.0000  1.0119  0.9739 
+  5  1.0346  1.0082  1.0110  1.0442  1.0339  1.0525  1.0373  0.9833  0.9652 
+  6  1.0315  1.0058  1.0095  1.0441  1.0525  0.0000  1.0178  0.9635  0.9554 
+  7  0.0000  1.0251  1.0273  0.0000  1.0373  1.0178  0.9739  0.9485  0.9466 
+  8  1.0111  0.9886  0.9889  1.0119  0.9833  0.9635  0.9485  0.9397  0.9429 
+  9  0.9757  0.9720  0.9720  0.9739  0.9652  0.9554  0.9466  0.9429  0.9487 
+================================================================================
+                               1-D Core Powers                                  
+================================================================================
+ iz      Midpint      Min z       Max z    Power
+   1      0.5000     0.0000      1.0000    1.0000
+
+
+********************************************************************************
+******************************* STATE_0004 EDITS *******************************
+********************************************************************************
+
+    k-eff = 1.1163394
+
+         =======* StateType *======= 
+                    1 INTEGER(SNK)               :: iState=            4
+                    2 TYPE(StringType)           :: title=
+                    3 TYPE(StringType)           :: op_date=
+                    4 REAL(SDK)                  :: rated_power= 0.1208000000000000E-01 !The rated power for the problem in units of MegaWatts.
+                    5 REAL(SDK)                  :: power=  100.0000000000000     !The percent of the core rated full power.
+                    6 REAL(SDK)                  :: rated_flow= 0.3149945000000000    
+                    7 REAL(SDK)                  :: flow=  100.0000000000000    
+                    8 TYPE(StringType)           :: rated_flow_units=KG/S
+                    9 REAL(SDK)                  :: bypass=  0.000000000000000    
+                   10 REAL(SDK)                  :: tinlet=  291.8500000000000    
+                   11 REAL(SDK)                  :: pressure=  0.000000000000000    
+                   12 REAL(SDK)                  :: exposure=  1.536316533207787    
+                   13 REAL(SDK)                  :: exposure_efpd=  40.00000000000000    
+                   14 REAL(SDK)                  :: exposure_hours=  960.0000000000000    
+                   15 REAL(SDK)                  :: hours=  0.000000000000000    
+                   16 LOGICAL(SBK)               :: reset_sol= F
+                   17 LOGICAL(SBK)               :: feedback= F
+                   18 REAL(SDK)                  :: modden= 0.7430000000000000    
+                   19 REAL(SDK)                  :: coolden= 0.7430000000000000    
+                   20 REAL(SDK)                  :: tfuel=  900.0000000000000    
+                   21 REAL(SDK)                  :: thexp_tfuel=  293.0000000000000    
+                   22 REAL(SDK)                  :: thexp_tmod=  293.0000000000000    
+                   23 REAL(SDK)                  :: thexp_tclad=  293.0000000000000    
+                   24 1-D ARRAY REAL(SDK)        :: void= 0.0000000000000    
+                   25 1-D ARRAY INTEGER(SNK)     :: bank_pos=            0
+                   26 1-D ARRAY TYPE(StringType) :: bank_labels=
+                   27 TYPE(StringType)           :: search=keff
+                   28 TYPE(StringType)           :: search_bank=D
+                   29 REAL(SDK)                  :: kcrit=  1.000000000000000    
+                   30 REAL(SDK)                  :: boron=  1300.000000000000    
+                   31 REAL(SDK)                  :: b10= 0.1990000000000000    
+                   32 LOGICAL(SBK)               :: b10_depl= F
+                   33 TYPE(StringType)           :: xenopt=
+                   34 TYPE(StringType)           :: samopt=
+                   35 REAL(SDK)                  :: rlx_xesm=  1.000000000000000    
+                   36 LOGICAL(SBK)               :: trans_on= F
+                   37 1-D ARRAY INTEGER(SNK)     :: to_matids=            0
+                   38 1-D ARRAY INTEGER(SNK)     :: from_matids=            0
+                   39 1-D ARRAY INTEGER(SNK)     :: comp_ids=            0
+                   40 1-D ARRAY REAL(SDK)        :: trans_amounts= 0.0000000000000    
+                   41 1-D ARRAY TYPE(StringType) :: mat_units=
+                   42 1-D ARRAY TYPE(StringType) :: time_units=
+                   43 1-D ARRAY REAL(SDK)        :: cool_chem= 0.0000000000000    
+                   44 REAL(SDK)                  :: uniform_crud_thickness=  0.000000000000000    
+                   45 REAL(SDK)                  :: uniform_crud_mass=  0.000000000000000    
+                   46 REAL(SDK)                  :: uniform_crud_boron_mass=  0.000000000000000    
+
+================================================================================
+                                 3-D Pin Powers                                  
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0351  1.0363  0.0000  1.0345  1.0314  0.0000  1.0111  0.9756 
+  2  1.0351  1.0092  1.0101  1.0367  1.0081  1.0058  1.0251  0.9886  0.9720 
+  3  1.0363  1.0101  1.0099  1.0372  1.0109  1.0095  1.0272  0.9890  0.9720 
+  4  0.0000  1.0367  1.0372  0.0000  1.0441  1.0439  0.0000  1.0120  0.9738 
+  5  1.0345  1.0081  1.0109  1.0441  1.0339  1.0526  1.0375  0.9834  0.9653 
+  6  1.0314  1.0058  1.0095  1.0439  1.0526  0.0000  1.0179  0.9634  0.9555 
+  7  0.0000  1.0251  1.0272  0.0000  1.0375  1.0179  0.9740  0.9485  0.9467 
+  8  1.0111  0.9886  0.9890  1.0120  0.9834  0.9634  0.9485  0.9398  0.9431 
+  9  0.9756  0.9720  0.9720  0.9738  0.9653  0.9555  0.9467  0.9431  0.9489 
+
+================================================================================
+                              3-D Assembly Powers                                
+================================================================================
+Plane    1
+y/x       1
+  1  1.0000 
+================================================================================
+                     Axially-Integrated 2-D Assembly Powers                      
+================================================================================
+y/x       1
+  1  1.0000 
+================================================================================
+                       Axially-Integrated 2-D Pin Powers                         
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0351  1.0363  0.0000  1.0345  1.0314  0.0000  1.0111  0.9756 
+  2  1.0351  1.0092  1.0101  1.0367  1.0081  1.0058  1.0251  0.9886  0.9720 
+  3  1.0363  1.0101  1.0099  1.0372  1.0109  1.0095  1.0272  0.9890  0.9720 
+  4  0.0000  1.0367  1.0372  0.0000  1.0441  1.0439  0.0000  1.0120  0.9738 
+  5  1.0345  1.0081  1.0109  1.0441  1.0339  1.0526  1.0375  0.9834  0.9653 
+  6  1.0314  1.0058  1.0095  1.0439  1.0526  0.0000  1.0179  0.9634  0.9555 
+  7  0.0000  1.0251  1.0272  0.0000  1.0375  1.0179  0.9740  0.9485  0.9467 
+  8  1.0111  0.9886  0.9890  1.0120  0.9834  0.9634  0.9485  0.9398  0.9431 
+  9  0.9756  0.9720  0.9720  0.9738  0.9653  0.9555  0.9467  0.9431  0.9489 
+================================================================================
+                               1-D Core Powers                                  
+================================================================================
+ iz      Midpint      Min z       Max z    Power
+   1      0.5000     0.0000      1.0000    1.0000
+
+
+********************************************************************************
+******************************* STATE_0005 EDITS *******************************
+********************************************************************************
+
+    k-eff = 1.1102212
+
+         =======* StateType *======= 
+                    1 INTEGER(SNK)               :: iState=            5
+                    2 TYPE(StringType)           :: title=
+                    3 TYPE(StringType)           :: op_date=
+                    4 REAL(SDK)                  :: rated_power= 0.1208000000000000E-01 !The rated power for the problem in units of MegaWatts.
+                    5 REAL(SDK)                  :: power=  100.0000000000000     !The percent of the core rated full power.
+                    6 REAL(SDK)                  :: rated_flow= 0.3149945000000000    
+                    7 REAL(SDK)                  :: flow=  100.0000000000000    
+                    8 TYPE(StringType)           :: rated_flow_units=KG/S
+                    9 REAL(SDK)                  :: bypass=  0.000000000000000    
+                   10 REAL(SDK)                  :: tinlet=  291.8500000000000    
+                   11 REAL(SDK)                  :: pressure=  0.000000000000000    
+                   12 REAL(SDK)                  :: exposure=  2.304474799811681    
+                   13 REAL(SDK)                  :: exposure_efpd=  60.00000000000000    
+                   14 REAL(SDK)                  :: exposure_hours=  1440.000000000000    
+                   15 REAL(SDK)                  :: hours=  0.000000000000000    
+                   16 LOGICAL(SBK)               :: reset_sol= F
+                   17 LOGICAL(SBK)               :: feedback= F
+                   18 REAL(SDK)                  :: modden= 0.7430000000000000    
+                   19 REAL(SDK)                  :: coolden= 0.7430000000000000    
+                   20 REAL(SDK)                  :: tfuel=  900.0000000000000    
+                   21 REAL(SDK)                  :: thexp_tfuel=  293.0000000000000    
+                   22 REAL(SDK)                  :: thexp_tmod=  293.0000000000000    
+                   23 REAL(SDK)                  :: thexp_tclad=  293.0000000000000    
+                   24 1-D ARRAY REAL(SDK)        :: void= 0.0000000000000    
+                   25 1-D ARRAY INTEGER(SNK)     :: bank_pos=            0
+                   26 1-D ARRAY TYPE(StringType) :: bank_labels=
+                   27 TYPE(StringType)           :: search=keff
+                   28 TYPE(StringType)           :: search_bank=D
+                   29 REAL(SDK)                  :: kcrit=  1.000000000000000    
+                   30 REAL(SDK)                  :: boron=  1300.000000000000    
+                   31 REAL(SDK)                  :: b10= 0.1990000000000000    
+                   32 LOGICAL(SBK)               :: b10_depl= F
+                   33 TYPE(StringType)           :: xenopt=
+                   34 TYPE(StringType)           :: samopt=
+                   35 REAL(SDK)                  :: rlx_xesm=  1.000000000000000    
+                   36 LOGICAL(SBK)               :: trans_on= F
+                   37 1-D ARRAY INTEGER(SNK)     :: to_matids=            0
+                   38 1-D ARRAY INTEGER(SNK)     :: from_matids=            0
+                   39 1-D ARRAY INTEGER(SNK)     :: comp_ids=            0
+                   40 1-D ARRAY REAL(SDK)        :: trans_amounts= 0.0000000000000    
+                   41 1-D ARRAY TYPE(StringType) :: mat_units=
+                   42 1-D ARRAY TYPE(StringType) :: time_units=
+                   43 1-D ARRAY REAL(SDK)        :: cool_chem= 0.0000000000000    
+                   44 REAL(SDK)                  :: uniform_crud_thickness=  0.000000000000000    
+                   45 REAL(SDK)                  :: uniform_crud_mass=  0.000000000000000    
+                   46 REAL(SDK)                  :: uniform_crud_boron_mass=  0.000000000000000    
+
+================================================================================
+                                 3-D Pin Powers                                  
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0349  1.0361  0.0000  1.0344  1.0312  0.0000  1.0111  0.9756 
+  2  1.0349  1.0091  1.0100  1.0365  1.0080  1.0058  1.0249  0.9887  0.9721 
+  3  1.0361  1.0100  1.0098  1.0369  1.0108  1.0095  1.0271  0.9891  0.9721 
+  4  0.0000  1.0365  1.0369  0.0000  1.0439  1.0436  0.0000  1.0121  0.9739 
+  5  1.0344  1.0080  1.0108  1.0439  1.0338  1.0526  1.0375  0.9835  0.9655 
+  6  1.0312  1.0058  1.0095  1.0436  1.0526  0.0000  1.0179  0.9634  0.9557 
+  7  0.0000  1.0249  1.0271  0.0000  1.0375  1.0179  0.9741  0.9487  0.9470 
+  8  1.0111  0.9887  0.9891  1.0121  0.9835  0.9634  0.9487  0.9401  0.9434 
+  9  0.9756  0.9721  0.9721  0.9739  0.9655  0.9557  0.9470  0.9434  0.9492 
+
+================================================================================
+                              3-D Assembly Powers                                
+================================================================================
+Plane    1
+y/x       1
+  1  1.0000 
+================================================================================
+                     Axially-Integrated 2-D Assembly Powers                      
+================================================================================
+y/x       1
+  1  1.0000 
+================================================================================
+                       Axially-Integrated 2-D Pin Powers                         
+================================================================================
+Assembly   1 at (  1,  1)
+y/x       1       2       3       4       5       6       7       8       9
+  1  0.0000  1.0349  1.0361  0.0000  1.0344  1.0312  0.0000  1.0111  0.9756 
+  2  1.0349  1.0091  1.0100  1.0365  1.0080  1.0058  1.0249  0.9887  0.9721 
+  3  1.0361  1.0100  1.0098  1.0369  1.0108  1.0095  1.0271  0.9891  0.9721 
+  4  0.0000  1.0365  1.0369  0.0000  1.0439  1.0436  0.0000  1.0121  0.9739 
+  5  1.0344  1.0080  1.0108  1.0439  1.0338  1.0526  1.0375  0.9835  0.9655 
+  6  1.0312  1.0058  1.0095  1.0436  1.0526  0.0000  1.0179  0.9634  0.9557 
+  7  0.0000  1.0249  1.0271  0.0000  1.0375  1.0179  0.9741  0.9487  0.9470 
+  8  1.0111  0.9887  0.9891  1.0121  0.9835  0.9634  0.9487  0.9401  0.9434 
+  9  0.9756  0.9721  0.9721  0.9739  0.9655  0.9557  0.9470  0.9434  0.9492 
+================================================================================
+                               1-D Core Powers                                  
+================================================================================
+ iz      Midpint      Min z       Max z    Power
+   1      0.5000     0.0000      1.0000    1.0000
+
+
+     = Memory Usage results in MB =
+
+ +------------------------------------------------------+
+ |  Rank  |  Proc. Mem (MB) | Proc. Mem from MPACT (MB) |
+ +------------------------------------------------------+
+ | Total  |   228.3         |   101.7                   |
+ +------------------------------------------------------+
+ |  Avg   |   228.3         |   101.7                   |
+ +------------------------------------------------------+
+ |  Min   |   228.3         |   101.7                   |
+ +------------------------------------------------------+
+ |  MAX   |   228.3         |   101.7                   |
+ +------------------------------------------------------+
+ |      0 |   228.3         |   101.7                   |
+ +------------------------------------------------------+
+
+     = Timing results in HH:MM:SS.ff =
+
+ +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+ |  Rank  | Total Time | Init. Time | Solve Time | Comm. Time | MOC Solver Calc. | MOC Solver Comm. | Self-Shield Calc. | Self-Shield Comm. |  calcMacro |  CMFD  Setup |  CMFD  Solve |  CMFD  Update | Depletion Calc. |
+ +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+ |  MAX   |  02:21.28  |  00:02.73  |  02:18.55  |  00:00.00  |  00:29.41        |  00:00.10        |  00:02.56         |  00:00.02         |  00:06.43  |  00:00.52    |  00:04.82    |  00:01.66     |  01:25.28       |
+ |      0 |  02:21.28  |  00:02.73  |  02:18.55  |  00:00.00  |  00:29.41        |  00:00.10        |  00:02.56         |  00:00.02         |  00:06.43  |  00:00.52    |  00:04.82    |  00:01.66     |  01:25.28       |
+ +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,258 @@
+   00:00.00 Processing Input...
+
+      EXCEPTION_INFORMATION: Input to XMLProc::SetupCore - automesh_bounds_target not found, using default value of difference between min and max.
+
+      EXCEPTION_INFORMATION: XMLProc::SetupOptionPL - SCATT_METH_REFL parameter not present.  Value from SCATT_METH will be used.
+   00:00.18 Processing XS Libraries...
+   00:01.13 Generating Materials...
+   00:01.16 Generating Reactor Geometry...
+   00:01.16 Generating Reactor Mesh...
+   00:01.35 Initializing Parallel Environment...
+   00:01.36 Setting up angular quadrature...
+   00:01.36 Initializing mesh...
+   00:01.37 Generating Input Edits...
+   00:01.48 Initializing Base MOC Sweeper...
+                Setting up modular rays...
+                Performing ray tracing...
+                Setting up long rays...
+                Allocating base solution variables...
+                Allocating solution variables...
+   00:02.06 Initializing Multi-group Fixed Source Solver...
+                Default convergence norm is being used
+                Default step algorithm is being used
+                Default solve algorithm is being used
+   00:02.07 Initializing Eigenvalue Solver...
+                Adding eigenvalue accelerator...
+                 -adCMFD acceleration is being used (MG LS, Node-Major)
+                      ...with P0 boundary update
+                      ...with flat prolongation
+                      ...not using angle decomp processors
+            Setting PETSc Linear Solver to GMRES
+   00:02.39 Initializing Feedback Solver...
+   00:02.40 Initializing Base MOC Sweeper...
+                Setting up modular rays...
+                Performing ray tracing...
+                Setting up long rays...
+                Allocating base solution variables...
+                Allocating solution variables...
+   00:02.72 Initializing Depletion Module...
+   00:02.72 Initializing MultiState Solver...
+   00:02.89 Solving State 1/5...
+   00:02.89 Calculating Macroscopic XS
+   00:03.06 Using TCP0 in All Regions...
+   00:03.06 Calculating Equivalence XS...
+            Solving Subgroup FSP...
+              Running Batch   1/5 (1-53)
+                    4    2.31029E-11
+              Running Batch   2/5 (54-107)
+                    5    3.38896E-14
+              Running Batch   3/5 (108-160)
+                    5    8.26700E-14
+              Running Batch   4/5 (161-214)
+                    5    3.02536E-15
+              Running Batch   5/5 (215-268)
+                    4    4.32943E-10
+   00:05.75 Calculating Macroscopic XS
+   00:05.91 Using TCP0 in All Regions...
+   00:05.91 Performing Eigenvalue Calculation...
+   00:05.91      iter    keff     norm_keff    norm_fissrc
+   00:05.91         0  1.0000000 1.000000E-06 5.000000E-05
+            MG-CMFD    4    58    1.1671313   1.266943E-09
+            MG-INNER   1          1           5.287237E-01
+   00:06.89         1  1.1671313 1.671313E-01 2.364061E-01
+            MG-CMFD    4    54    1.1734317   1.456677E-10
+            MG-INNER   1          1           2.967793E-02
+   00:07.81         2  1.1734317 6.300372E-03 9.326166E-03
+            MG-CMFD    3    52    1.1698234   3.569897E-09
+            MG-INNER   1          1           1.281750E-02
+   00:08.70         3  1.1698234 3.608291E-03 1.647430E-03
+            MG-CMFD    2    50    1.1695151   1.169926E-08
+            MG-INNER   1          1           1.440295E-03
+   00:09.55         4  1.1695151 3.082786E-04 2.621920E-04
+            MG-CMFD    3    48    1.1693295   2.169526E-10
+            MG-INNER   1          1           5.504265E-04
+   00:10.43         5  1.1693295 1.856414E-04 1.840010E-04
+            MG-CMFD    3    45    1.1693219   4.758310E-11
+            MG-INNER   1          1           5.247396E-05
+   00:11.30         6  1.1693219 7.546974E-06 4.477112E-05
+            MG-CMFD    2    45    1.1693026   1.324840E-09
+            MG-INNER   1          1           5.349606E-05
+   00:12.13         7  1.1693026 1.930358E-05 3.387298E-05
+            MG-CMFD    2    40    1.1693007   3.049906E-10
+            MG-INNER   1          1           9.658470E-06
+   00:12.96         8  1.1693007 1.962726E-06 1.230912E-05
+            MG-CMFD    2    40    1.1692976   1.188272E-10
+            MG-INNER   1          1           8.962921E-06
+   00:13.78         9  1.1692976 3.066894E-06 7.777171E-06
+            MG-CMFD    2    35    1.1692968   7.348654E-11
+            MG-INNER   1          1           2.933289E-06
+   00:14.67        10  1.1692968 7.556667E-07 3.577832E-06
+   00:14.68 Convergence criteria satisfied
+   00:14.80 Solving State 2/5...
+   00:14.80 Performing Depletion...
+   00:17.84 Burnup =   0.3841 MWD/kgHM   10.00 EFPD
+   00:17.84 Predictor Step...
+   00:28.06 Calculating Macroscopic XS
+   00:28.73 Using TCP0 in All Regions...
+   00:28.73        10  1.1692968 7.556667E-07 3.577832E-06
+            MG-CMFD    3    51    1.1273570   1.140905E-09
+            MG-INNER   1          1           6.301930E-02
+   00:29.64        11  1.1273570 4.193985E-02 4.997183E-03
+            MG-CMFD    3    48    1.1263687   4.571913E-10
+            MG-INNER   1          1           3.040031E-03
+   00:30.52        12  1.1263687 9.883231E-04 3.716580E-04
+            MG-CMFD    3    46    1.1261971   1.213792E-10
+            MG-INNER   1          1           4.771934E-04
+   00:31.41        13  1.1261971 1.715800E-04 6.820396E-05
+            MG-CMFD    2    42    1.1261841   7.192705E-10
+            MG-INNER   1          1           4.739701E-05
+   00:32.25        14  1.1261841 1.296741E-05 1.209958E-05
+            MG-CMFD    2    40    1.1261763   4.659095E-10
+            MG-INNER   1          1           1.910806E-05
+   00:33.12        15  1.1261763 7.848712E-06 7.922982E-06
+            MG-CMFD    2    36    1.1261761   8.014270E-11
+            MG-INNER   1          1           1.570561E-06
+   00:33.94        16  1.1261761 1.703690E-07 2.077078E-06
+   00:33.94 Convergence criteria satisfied
+   00:33.95 Corrector Step...
+   00:44.41 Calculating Macroscopic XS
+   00:45.07 Using TCP0 in All Regions...
+   00:45.07        16  1.1261761 1.703690E-07 2.077078E-06
+            MG-CMFD    2    45    1.1259961   1.419020E-09
+            MG-INNER   1          1           1.605041E-04
+   00:45.91        17  1.1259961 1.800033E-04 4.338099E-05
+            MG-CMFD    2    40    1.1259872   3.111111E-10
+            MG-INNER   1          1           2.749674E-05
+   00:46.76        18  1.1259872 8.888657E-06 3.617622E-06
+            MG-CMFD    2    37    1.1259856   8.787191E-11
+            MG-INNER   1          1           4.535944E-06
+   00:47.58        19  1.1259856 1.644241E-06 8.961445E-07
+            MG-CMFD    2    31    1.1259854   1.075639E-11
+            MG-INNER   1          1           5.098662E-07
+   00:48.39        20  1.1259854 1.451104E-07 2.240296E-07
+   00:48.39 Convergence criteria satisfied
+   00:48.39 Burnup =   0.3841 MWD/kgHM   10.00 EFPD  keff = 1.125985
+   00:48.51 Solving State 3/5...
+   00:48.51 Performing Depletion...
+   00:48.51 Burnup =   0.7682 MWD/kgHM   20.00 EFPD
+   00:48.51 Predictor Step...
+   00:59.21 Calculating Macroscopic XS
+   00:59.92 Using TCP0 in All Regions...
+   00:59.92        20  1.1259854 1.451104E-07 2.240296E-07
+            MG-CMFD    3    49    1.1219703   9.954922E-10
+            MG-INNER   1          1           2.899624E-03
+   01:00.82        21  1.1219703 4.015120E-03 1.005701E-03
+            MG-CMFD    3    46    1.1218107   1.482686E-10
+            MG-INNER   1          1           4.688466E-04
+   01:01.69        22  1.1218107 1.595689E-04 1.002741E-04
+            MG-CMFD    2    43    1.1217867   2.678164E-09
+            MG-INNER   1          1           6.745569E-05
+   01:02.52        23  1.1217867 2.397358E-05 1.638366E-05
+            MG-CMFD    2    39    1.1217848   3.424440E-10
+            MG-INNER   1          1           6.989030E-06
+   01:03.35        24  1.1217848 1.950208E-06 2.355490E-06
+            MG-CMFD    2    35    1.1217836   2.451014E-10
+            MG-INNER   1          1           2.862057E-06
+   01:04.19        25  1.1217836 1.195538E-06 1.778030E-06
+            MG-CMFD    2    31    1.1217835   7.087766E-11
+            MG-INNER   1          1           3.256341E-07
+   01:05.01        26  1.1217835 6.030793E-08 4.259532E-07
+   01:05.01 Convergence criteria satisfied
+   01:05.01 Corrector Step...
+   01:15.65 Calculating Macroscopic XS
+   01:16.36 Using TCP0 in All Regions...
+   01:16.36        26  1.1217835 6.030793E-08 4.259532E-07
+            MG-CMFD    2    42    1.1217793   3.201047E-10
+            MG-INNER   1          1           1.906303E-05
+   01:17.21        27  1.1217793 4.265088E-06 7.043601E-06
+            MG-CMFD    2    36    1.1217778   4.766959E-11
+            MG-INNER   1          1           4.520354E-06
+   01:18.03        28  1.1217778 1.458585E-06 6.105447E-07
+            MG-CMFD    2    32    1.1217775   2.287855E-11
+            MG-INNER   1          1           7.453411E-07
+   01:18.86        29  1.1217775 2.716295E-07 1.666956E-07
+   01:18.86 Convergence criteria satisfied
+   01:18.86 Burnup =   0.7682 MWD/kgHM   20.00 EFPD  keff = 1.121778
+   01:18.98 Solving State 4/5...
+   01:18.98 Performing Depletion...
+   01:18.98 Burnup =   1.5363 MWD/kgHM   40.00 EFPD
+   01:18.98 Predictor Step...
+   01:29.74 Calculating Macroscopic XS
+   01:30.49 Using TCP0 in All Regions...
+   01:30.49        29  1.1217775 2.716295E-07 1.666956E-07
+            MG-CMFD    3    50    1.1165408   1.823243E-09
+            MG-INNER   1          1           2.861812E-03
+   01:31.44        30  1.1165408 5.236724E-03 1.700302E-03
+            MG-CMFD    3    47    1.1163289   2.625105E-10
+            MG-INNER   1          1           6.339778E-04
+   01:32.40        31  1.1163289 2.119644E-04 1.750599E-04
+            MG-CMFD    2    44    1.1162992   4.203936E-09
+            MG-INNER   1          1           8.516185E-05
+   01:33.26        32  1.1162992 2.963742E-05 2.567217E-05
+            MG-CMFD    2    40    1.1162967   6.313146E-10
+            MG-INNER   1          1           8.980361E-06
+   01:34.10        33  1.1162967 2.501472E-06 3.560901E-06
+            MG-CMFD    2    36    1.1162952   3.934782E-10
+            MG-INNER   1          1           3.603362E-06
+   01:34.92        34  1.1162952 1.519037E-06 2.598022E-06
+            MG-CMFD    2    33    1.1162951   1.268304E-10
+            MG-INNER   1          1           4.646302E-07
+   01:35.75        35  1.1162951 9.281739E-08 6.194728E-07
+   01:35.75 Convergence criteria satisfied
+   01:35.76 Corrector Step...
+   01:46.59 Calculating Macroscopic XS
+   01:47.35 Using TCP0 in All Regions...
+   01:47.35        35  1.1162951 9.281739E-08 6.194728E-07
+            MG-CMFD    2    43    1.1163439   7.949401E-10
+            MG-INNER   1          1           1.481197E-04
+   01:48.21        36  1.1163439 4.880351E-05 1.765246E-05
+            MG-CMFD    2    38    1.1163401   1.291813E-10
+            MG-INNER   1          1           1.174972E-05
+   01:49.04        37  1.1163401 3.851272E-06 1.718146E-06
+            MG-CMFD    2    34    1.1163394   5.579473E-11
+            MG-INNER   1          1           1.832070E-06
+   01:49.87        38  1.1163394 6.652738E-07 3.660718E-07
+   01:49.87 Convergence criteria satisfied
+   01:49.87 Burnup =   1.5363 MWD/kgHM   40.00 EFPD  keff = 1.116339
+   01:49.99 Solving State 5/5...
+   01:49.99 Performing Depletion...
+   01:49.99 Burnup =   2.3045 MWD/kgHM   60.00 EFPD
+   01:49.99 Predictor Step...
+   02:00.82 Calculating Macroscopic XS
+   02:01.57 Using TCP0 in All Regions...
+   02:01.57        38  1.1163394 6.652738E-07 3.660718E-07
+            MG-CMFD    3    50    1.1103575   1.844513E-09
+            MG-INNER   1          1           4.135280E-03
+   02:02.54        39  1.1103575 5.981913E-03 1.578176E-03
+            MG-CMFD    3    46    1.1102055   2.666543E-10
+            MG-INNER   1          1           5.028553E-04
+   02:03.41        40  1.1102055 1.519957E-04 1.631277E-04
+            MG-CMFD    2    41    1.1101831   3.859882E-09
+            MG-INNER   1          1           6.679343E-05
+   02:04.28        41  1.1101831 2.238848E-05 2.289533E-05
+            MG-CMFD    2    37    1.1101811   6.034702E-10
+            MG-INNER   1          1           7.153173E-06
+   02:05.15        42  1.1101811 1.959218E-06 3.132395E-06
+            MG-CMFD    2    35    1.1101799   3.572670E-10
+            MG-INNER   1          1           2.823994E-06
+   02:05.97        43  1.1101799 1.199146E-06 2.249502E-06
+            MG-CMFD    2    33    1.1101799   1.209449E-10
+            MG-INNER   1          1           3.921881E-07
+   02:06.80        44  1.1101799 8.068881E-08 5.342377E-07
+   02:06.80 Convergence criteria satisfied
+   02:06.80 Corrector Step...
+   02:17.65 Calculating Macroscopic XS
+   02:18.42 Using TCP0 in All Regions...
+   02:18.42        44  1.1101799 8.068881E-08 5.342377E-07
+            MG-CMFD    2    43    1.1102256   8.610004E-10
+            MG-INNER   1          1           1.386497E-04
+   02:19.25        45  1.1102256 4.574770E-05 1.657075E-05
+            MG-CMFD    2    38    1.1102218   1.432182E-10
+            MG-INNER   1          1           1.117013E-05
+   02:20.08        46  1.1102218 3.773071E-06 1.728337E-06
+            MG-CMFD    2    33    1.1102212   5.774295E-11
+            MG-INNER   1          1           1.695310E-06
+   02:20.90        47  1.1102212 6.229593E-07 3.473041E-07
+   02:20.90 Convergence criteria satisfied
+   02:20.90 Burnup =   2.3045 MWD/kgHM   60.00 EFPD  keff = 1.110221
+   02:21.27 Finished
