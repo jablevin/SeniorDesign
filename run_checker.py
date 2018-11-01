@@ -74,6 +74,7 @@ for file_ in range(1, 38):
 with open(copy_location + 'DNB.out','w') as f:
 	f.write(str(now) + '\n')
 	f.write('MDNBR:' + str(min(DNB_list)) + '\n')
+    f.write('k-eff -------------\n')
     for i in list(state_line.keys()):
         f.write('State ' + str(i) + ':  ' + str(k_eff[i]) + '\n')
 
