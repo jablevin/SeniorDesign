@@ -1,8 +1,12 @@
 from time import sleep
+import os
+import datetime
 
 filename = raw_input()
+location = raw_input()
+copy_location = raw_input()
 
-print filename
+now = datetime.datetime.now()
 
 wait_time = 10 #seconds
 check = False
@@ -29,3 +33,29 @@ while not check:
         break
 
     sleep(wait_time)
+
+
+
+DNB_list = []
+for file_ in range(1, 38):
+    with open(location + 'deck.37.' + str(file_) + '.dnb.out', 'r') as search:
+        lines = search.readlines()
+        state_line = {}
+        counter = 1
+        for i in range(len(lines)):
+            lines[i] = lines[i].rstrip()
+
+    for i in range(len(lines)):
+        if 'DNBR' in lines[i]:
+            for j in range(27):
+                DNB_list.append(float(lines[j+i+1][60:71]))
+    search.close()
+    del lines
+
+print min(DNB_list)
+
+with open(copy_location + 'DNB.out','w') as f:
+	f.write(str(now) + '\n')
+	f.write('MDNBR:' + str(min(DNB_list)) + '\n')
+
+f.close()
