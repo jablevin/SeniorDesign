@@ -8,9 +8,10 @@ copy_location = raw_input()
 
 now = datetime.datetime.now()
 
-wait_time = 10 #seconds
+wait_time = 60 #seconds
 check = False
 iteration = 0
+# Finding when the run is complete
 while not check:
     iteration += 1
     try:
@@ -28,19 +29,36 @@ while not check:
                             break
     except:
         pass
-
     if iteration >= 360:
         break
-
     sleep(wait_time)
 
 
+#Finding all K-eff
+state_line = {}
+counter = 1
+for i in range(len(lines)):
+    lines[i] = lines[i].rstrip()
+    if lines[i].startswith('******************************* STATE_'):
+        state_line[counter] = i
+        counter += 1
 
+k_eff = {}
+for i in list(state_line.keys()):
+    if i != list(state_line.keys())[len(state_line)-1]:
+        upper_line = state_line[i+1]
+    else:
+        upper_line = len(lines)
+    for j in range(state_line[i], upper_line):
+        if 'k-eff' in lines[j]:
+            k_eff[i] = float(lines[j][12:])
+
+
+# Finding minimum DNB ratio
 DNB_list = []
 for file_ in range(1, 38):
     with open(location + 'deck.37.' + str(file_) + '.dnb.out', 'r') as search:
         lines = search.readlines()
-        state_line = {}
         counter = 1
         for i in range(len(lines)):
             lines[i] = lines[i].rstrip()
@@ -52,10 +70,11 @@ for file_ in range(1, 38):
     search.close()
     del lines
 
-print min(DNB_list)
 
 with open(copy_location + 'DNB.out','w') as f:
 	f.write(str(now) + '\n')
 	f.write('MDNBR:' + str(min(DNB_list)) + '\n')
+    for i in list(state_line.keys()):
+        f.write('State ' + str(i) + ':  ' + str(k_eff[i]) + '\n')
 
 f.close()
