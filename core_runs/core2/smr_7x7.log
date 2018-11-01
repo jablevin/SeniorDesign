@@ -241,3 +241,47 @@
    58:37.71 Using TCP0 in All Regions...
    58:37.71         8  1.0114936 2.137495E-05 1.370765E-04
             MG-CMFD    3   100    1.0115081   2.409731E-07
+            NODAL      5          5           2.541572E-05
+            MG-INNER   1          1           6.792525E-05
+   01:00:53 Calling CTF...
+                Maximum pin power is              276.762 [W/cm] ( 3.3793) in assembly ( 1, 1) ( 2, 1,15)
+                Maximum change in pin power is     -0.088 [W/cm] (1.1E-03) in assembly ( 1, 1) ( 2, 3,20)
+                Number of CTF Iterations            7
+                Maximum temperature is        864.903 [C]    in assembly ( 1, 1) ( 1, 1,15)
+                Maximum temperature change is   0.259 [C]    in assembly ( 1, 1) ( 1, 1, 9)
+                Maximum density change is       0.000 [g/cc] in assembly ( 1, 1) ( 1, 1,23)
+   01:00:54 Calculating Macroscopic XS
+   01:01:03 Using TCP0 in All Regions...
+   01:01:03         9  1.0115081 1.451591E-05 9.144666E-05
+            MG-CMFD    3   100    1.0115134   1.700406E-07
+            NODAL      5          5           2.074813E-05
+            MG-INNER   1          1           4.705745E-05
+   01:03:19 Calling CTF...
+                Maximum pin power is              276.760 [W/cm] ( 3.3792) in assembly ( 1, 1) ( 2, 1,15)
+                Maximum change in pin power is      0.059 [W/cm] (7.2E-04) in assembly ( 1, 1) ( 5, 6, 8)
+                Number of CTF Iterations          101
+                Maximum temperature is        864.885 [C]    in assembly ( 1, 1) ( 1, 1,15)
+                Maximum temperature change is   0.193 [C]    in assembly ( 1, 1) ( 1, 1, 9)
+                Maximum density change is       0.000 [g/cc] in assembly ( 1, 1) ( 1, 1,31)
+   01:03:33 Calculating Macroscopic XS
+   01:03:42 Using TCP0 in All Regions...
+   01:03:42        10  1.0115134 5.251645E-06 6.263580E-05
+            MG-CMFD    3    99    1.0115096   1.196181E-07
+            NODAL      5          5           1.713037E-05
+            MG-INNER   1          1           3.454603E-05
+   01:05:56 Calling CTF...
+                Maximum pin power is              276.745 [W/cm] ( 3.3791) in assembly ( 1, 1) ( 2, 1,15)
+                Maximum change in pin power is      0.046 [W/cm] (5.6E-04) in assembly ( 1, 1) ( 5, 6, 8)
+                Number of CTF Iterations            3
+                Maximum temperature is        864.866 [C]    in assembly ( 1, 1) ( 1, 1,15)
+                Maximum temperature change is   0.120 [C]    in assembly ( 1, 1) ( 1, 1, 9)
+                Maximum density change is       0.000 [g/cc] in assembly ( 1, 1) ( 1, 1,28)
+   01:05:57 Calculating Macroscopic XS
+   01:06:06 Using TCP0 in All Regions...
+   01:06:06        11  1.0115096 3.763381E-06 5.230158E-05
+            MG-CMFD    2    97    1.0115101   9.891879E-08
+            NODAL      5          5           1.427551E-05
+            MG-INNER   1          1           1.807054E-05
+   01:08:06        12  1.0115101 4.893958E-07 2.326726E-05
+   01:08:06 Convergence criteria satisfied
+   01:08:14 Finished
