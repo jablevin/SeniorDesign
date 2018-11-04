@@ -1,14 +1,20 @@
 from time import sleep
 import os
 import datetime
+# d = 'C:/Users/Jacob Blevins/Documents/Classes/SeniorDesign/core_runs/core2/'
 
 filename = raw_input()
 location = raw_input()
 copy_location = raw_input()
 
+
+# filename = d + 'smr_7x7.out'
+# location = d
+# copy_location = d
+
 now = datetime.datetime.now()
 
-wait_time = 60 #seconds
+wait_time = 1 #seconds
 check = False
 iteration = 0
 # Finding when the run is complete
@@ -29,7 +35,7 @@ while not check:
                             break
     except:
         pass
-    if iteration >= 360:
+    if iteration >= 1:
         break
     sleep(wait_time)
 
@@ -71,11 +77,11 @@ for file_ in range(1, 38):
     del lines
 
 
-with open(copy_location + 'Output.out','w') as f:
-	f.write(str(now) + '\n')
-	f.write('MDNBR:' + str(min(DNB_list)) + '\n')
-    f.write('k-eff -------------\n')
+with open(copy_location + 'Output.out','w+') as f:
+    f.write(str(now) + '\r\n')
+    f.write('MDNBR: ' + str(min(DNB_list)) + '\r\n')
+    f.write('k-eff -------------' + '\r\n')
     for i in list(state_line.keys()):
-        f.write('State ' + str(i) + ':  ' + str(k_eff[i]) + '\n')
+        f.write('State ' + str(i) + ': ' + str(k_eff[i]) + '\r\n')
 
 f.close()
