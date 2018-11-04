@@ -71,7 +71,7 @@ for file_ in range(1, 38):
     del lines
 
 
-with open(copy_location + 'DNB.out','w') as f:
+with open(copy_location + 'Output.out','w') as f:
 	f.write(str(now) + '\n')
 	f.write('MDNBR:' + str(min(DNB_list)) + '\n')
     f.write('k-eff -------------\n')
