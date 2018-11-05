@@ -14,7 +14,7 @@ copy_location = raw_input()
 
 now = datetime.datetime.now()
 
-wait_time = 1 #seconds
+wait_time = 60 #seconds
 check = False
 iteration = 0
 # Finding when the run is complete
@@ -35,7 +35,7 @@ while not check:
                             break
     except:
         pass
-    if iteration >= 1:
+    if iteration >= 360:
         break
     sleep(wait_time)
 
